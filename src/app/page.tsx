@@ -6,7 +6,7 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.header}></div>
       <div className={styles.body}>
-        <p>The page currently is under a major revision</p>
+        <p>The page is currently under a major revision</p>
         <p>Apologies for the inconvenience</p>
         <p>
           - Daeheon Jeong,{" "}
