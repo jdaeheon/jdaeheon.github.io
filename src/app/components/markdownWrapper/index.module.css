@@ -1,0 +1,6 @@
+.markdown-a{
+  font-style: italic;
+  /* text-decoration: underline; */
+  font-family: var(--bitter-font);
+  text-decoration: underline;
+}

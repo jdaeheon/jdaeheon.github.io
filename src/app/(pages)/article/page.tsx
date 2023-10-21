@@ -1,7 +1,7 @@
 import React from "react";
 
-function article() {
-  return <div>article</div>;
+function Article() {
+  return <div>Article</div>;
 }
 
-export default article;
+export default Article;

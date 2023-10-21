@@ -1,7 +1,7 @@
 import React from "react";
 
-function others() {
-  return <div>others</div>;
+function Others() {
+  return <div>Others</div>;
 }
 
-export default others;
+export default Others;

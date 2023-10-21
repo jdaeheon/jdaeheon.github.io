@@ -1,8 +1,26 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Open_Sans, Bitter, Inter, Instrument_Sans } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const openSans = Open_Sans({
+  subsets: ["latin"],
+  variable: "--open-sans-font",
+  // weight: ["300"],
+});
+const bitter = Bitter({
+  subsets: ["latin"],
+  variable: "--bitter-font",
+});
+const instrument = Instrument_Sans({
+  subsets: ["latin"],
+  variable: "--instrument-font",
+  // weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
+
+// [SOURCE] Font Variables
+// https://nextjs.org/docs/app/api-reference/components/font#css-variables
+// const fontClassNames = `${open-sans.className} ${merriweather.variable} ${inter.variable} ${poppins.variable}`;
+const fontClassNames = `${openSans.className} ${bitter.variable} ${instrument.variable}`;
 
 export const metadata: Metadata = {
   title: "Daeheon Jeong",
@@ -17,7 +35,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={fontClassNames}>{children}</body>
     </html>
   );
 }

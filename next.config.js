@@ -1,4 +1,5 @@
 // @ts-check
+const withMDX = require("@next/mdx")();
 
 /**
  * @type {import('next').NextConfig}
@@ -27,6 +28,20 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  /**
+   * Add next js a markdown-as-string loader
+   *
+   * @source https://stackoverflow.com/questions/47954367/import-markdown-files-as-strings-in-next-js
+   */
+  webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
+    config.module.rules.push({
+      test: /\.md$/,
+      // This is the asset module.
+      type: "asset/source",
+    });
+    return config;
+  },
+  pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
 };
 
-module.exports = nextConfig;
+module.exports = withMDX(nextConfig);
