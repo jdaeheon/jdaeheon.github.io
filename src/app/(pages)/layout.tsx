@@ -1,17 +1,55 @@
+"use client";
+
 import React from "react";
-import { Merriweather } from "next/font/google";
 import styles from "./pages.module.css";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
+
+function isActive(moduleName: string, pathName: string) {
+  return moduleName === pathName ? styles["header-button-active"] : "";
+}
 
 function PageLayout({ children }: { children: React.ReactNode }) {
+  const pathName = usePathname().replace(/^\/+/, "");
+
   return (
     <main className={styles.main}>
       <div className={styles.container}>
         <nav className={styles.header}>
           <h1 className={styles["header-title"]}>Daeheon Jeong</h1>
-          <button className={styles["header-button"]}>about</button>
-          <button className={styles["header-button"]}>projects</button>
-          <button className={styles["header-button"]}>publications</button>
-          <button className={styles["header-button"]}>news</button>
+          <Link
+            className={`${styles["header-button"]} ${isActive("", pathName)}`}
+            href="/"
+          >
+            about
+          </Link>
+          <Link
+            className={`${styles["header-button"]} ${isActive(
+              "news",
+              pathName
+            )}`}
+            href="/news"
+          >
+            news
+          </Link>
+          <Link
+            className={`${styles["header-button"]} ${isActive(
+              "projects",
+              pathName
+            )}`}
+            href="/projects"
+          >
+            projects
+          </Link>
+          <Link
+            className={`${styles["header-button"]} ${isActive(
+              "publications",
+              pathName
+            )}`}
+            href="/publications"
+          >
+            publications
+          </Link>
         </nav>
         <div className={styles.body}>{children}</div>
         <div className={styles.footer}></div>

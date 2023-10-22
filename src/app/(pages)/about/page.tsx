@@ -5,26 +5,26 @@ import News from "./subcomponents/sub.news";
 import Projects from "./subcomponents/sub.projects";
 import MarkdownWrapper from "@/app/components/markdownWrapper";
 import { getMarkDownItem } from "@/app/utils/common";
+import Link from "next/link";
 
 async function About() {
   const coverLetter = await getMarkDownItem("static/cover.letter.md");
-
   return (
     <div className={styles.container}>
       <article className={styles["cover-letter"]}>
         <section className={styles["cover-letter-content"]}>
           <article className={styles["cover-letter-content-description"]}>
-            <h3>Design · Research · Implement</h3>
+            <h3>design · research · implement</h3>
             <MarkdownWrapper>{coverLetter.content}</MarkdownWrapper>
           </article>
           <article className={styles["cover-letter-content-link"]}>
-            <h3>Links</h3>
-            <a
+            <h3>links</h3>
+            <Link
               className={styles["cover-letter-content-link-item"]}
-              href="https://google.com"
+              href="/cv.pdf"
             >
               <u>Curriculum Vitae</u>
-            </a>
+            </Link>
             <a
               className={styles["cover-letter-content-link-item"]}
               href="https://github.com/jdaeheon"
