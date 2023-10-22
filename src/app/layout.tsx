@@ -1,6 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Open_Sans, Bitter, Inter, Instrument_Sans } from "next/font/google";
+import { Open_Sans, Bitter, Libre_Franklin } from "next/font/google";
 
 const openSans = Open_Sans({
   subsets: ["latin"],
@@ -11,7 +11,7 @@ const bitter = Bitter({
   subsets: ["latin"],
   variable: "--bitter-font",
 });
-const instrument = Instrument_Sans({
+const instrument = Libre_Franklin({
   subsets: ["latin"],
   variable: "--instrument-font",
   // weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
