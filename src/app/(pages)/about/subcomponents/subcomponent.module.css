@@ -15,7 +15,7 @@
 .news-title h3{
   font-weight: 600;
   font-size: 1rem;
-  font-family: var(--instrument-font);
+  font-family: var(--franklin-font);
 }
 .news-content{
   width: 100%;
@@ -56,7 +56,7 @@
 .project-title h3{
   font-weight: 600;
   font-size: 1rem;
-  font-family: var(--instrument-font);
+  font-family: var(--franklin-font);
 }
 .project-title:hover{
   cursor: pointer;

@@ -52,7 +52,7 @@ function PageLayout({ children }: { children: React.ReactNode }) {
           </Link>
         </nav>
         <div className={styles.body}>{children}</div>
-        <div className={styles.footer}></div>
+        <footer className={styles.footer}></footer>
       </div>
     </main>
   );

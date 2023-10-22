@@ -88,7 +88,7 @@
   font-weight: 500;
   font-size: 1rem;
   font-weight: 600;
-  font-family: var(--instrument-font);
+  font-family: var(--franklin-font);
 }
 .cover-letter-content-photo{
   width: 100%;
@@ -103,7 +103,7 @@
 }
 .cover-letter-content-link h3{
   font-weight: 600;
-  font-family: var(--instrument-font);
+  font-family: var(--franklin-font);
   font-size: 1rem;
 }
 

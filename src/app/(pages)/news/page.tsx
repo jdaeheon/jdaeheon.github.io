@@ -1,7 +1,30 @@
+import MarkdownWrapper from "@/app/components/markdownWrapper";
+import { getMarkdownArray } from "@/app/utils/common";
+import styles from "./page.module.css";
 import React from "react";
 
-function News() {
-  return <div>News</div>;
+async function News() {
+  const newsMarkdownList = await getMarkdownArray("news");
+
+  return (
+    <section className={styles["container"]}>
+      <h3>news</h3>
+      {newsMarkdownList.map((item, i) => {
+        return (
+          <article key={i} className={styles["news-article"]}>
+            <div className={styles["news-header"]}>
+              <p className={styles["news-title"]}>{item.data.title}</p>
+              <p className={styles["news-date"]}>{item.data.date}</p>
+            </div>
+            <MarkdownWrapper>{item.content}</MarkdownWrapper>
+          </article>
+        );
+      })}
+      <article className={styles["news-footer"]}>
+        Last updated on Dec-01-02
+      </article>
+    </section>
+  );
 }
 
 export default News;

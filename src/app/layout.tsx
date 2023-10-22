@@ -5,22 +5,20 @@ import { Open_Sans, Bitter, Libre_Franklin } from "next/font/google";
 const openSans = Open_Sans({
   subsets: ["latin"],
   variable: "--open-sans-font",
-  // weight: ["300"],
 });
 const bitter = Bitter({
   subsets: ["latin"],
   variable: "--bitter-font",
 });
-const instrument = Libre_Franklin({
+const franklin = Libre_Franklin({
   subsets: ["latin"],
-  variable: "--instrument-font",
-  // weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  variable: "--franklin-font",
 });
 
 // [SOURCE] Font Variables
 // https://nextjs.org/docs/app/api-reference/components/font#css-variables
 // const fontClassNames = `${open-sans.className} ${merriweather.variable} ${inter.variable} ${poppins.variable}`;
-const fontClassNames = `${openSans.className} ${bitter.variable} ${instrument.variable}`;
+const fontClassNames = `${openSans.className} ${bitter.variable} ${franklin.variable}`;
 
 export const metadata: Metadata = {
   title: "Daeheon Jeong",
