@@ -10,8 +10,6 @@ export interface IArticleMarkdown {
   content: string;
 }
 
-// code idea fro
-
 /**
  * Get array of markdown from given location
  * @linkplain https://github.com/vercel/next.js/issues/51860
@@ -26,9 +24,21 @@ export async function getMarkdownArray(location: string) {
     .filter((item) => item.endsWith(".md"))
     .map((item) => {
       const postDirectory = path.join(directory, item);
-      const content = fs.readFileSync(postDirectory, "utf-8");
-      return matter(content);
-    });
+      const contentString = fs.readFileSync(postDirectory, "utf-8");
+      const content = matter(contentString);
+      content.data.dateObject = new Date(content.data.date);
+      content.data.date = new Intl.DateTimeFormat("en-US", {
+        year: "numeric",
+        month: "short",
+        day: "numeric",
+      }).format(content.data.dateObject);
+      return content;
+    })
+    .sort((a, b) => b.data.dateObject.getTime() - a.data.dateObject.getTime());
+
+  // const markdownListSorted = markdownList.sort(
+  //   (a, b) => a.data.date.getTime() - b.data.date.getTime()
+  // );
   return markdownList;
 }
 
@@ -41,5 +51,12 @@ export async function getMarkDownItem(location: string) {
   const directory = path.join(process.cwd(), "src/data/markdown", location);
   const content = fs.readFileSync(directory, "utf-8");
   const markdown = matter(content);
+  markdown.data.dateObject = new Date(markdown.data.date);
+  markdown.data.date = new Intl.DateTimeFormat("en-US", {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+  }).format(markdown.data.dateObject);
+
   return markdown;
 }
