@@ -33,6 +33,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <meta name="robots" content="noindex" />
       <body className={fontClassNames}>{children}</body>
     </html>
   );
