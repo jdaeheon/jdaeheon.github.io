@@ -25,6 +25,7 @@ async function Projects() {
             caption={item.data.caption}
             content={item.data.description}
             date={item.data.date}
+            link={item.data.link}
           />
         ))}
       </section>

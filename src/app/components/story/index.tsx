@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
-import { HiArrowLongRight } from "react-icons/hi2";
 import styles from "./index.module.css";
+import Link from "next/link";
 
 interface IStoryProps {
   title: string;
@@ -10,6 +10,7 @@ interface IStoryProps {
   caption: string;
   content: string;
   date: string;
+  link: string;
 }
 
 function Story(props: IStoryProps) {
@@ -32,7 +33,7 @@ function Story(props: IStoryProps) {
           alt={props.caption}
         />
       </figure>
-      <a className={styles["story-item"]} href={"https://google.com"}>
+      <Link className={styles["story-item"]} href={`/projects/${props.link}`}>
         <h5
           className={`${styles["story-title"]} ${
             isHover ? styles["underline"] : ""
@@ -51,7 +52,7 @@ function Story(props: IStoryProps) {
             more
           </p>
         </div>
-      </a>
+      </Link>
     </article>
   );
 }

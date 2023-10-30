@@ -4,3 +4,65 @@
   font-family: var(--bitter-font);
   text-decoration: underline;
 }
+
+.markdown-p{
+  font-size: 0.8rem;
+  line-height: 1.6rem;
+  margin: 0.8rem 0;
+}
+
+.markdown-h1{
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-family: var(--franklin-font);
+
+  margin: 1.4rem 0;
+  line-height: 1.4rem;
+}
+.markdown-h2{
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: var(--franklin-font);
+
+  margin: 1.2rem 0;
+  line-height: 1.2rem;
+}
+.markdown-h3{
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: var(--franklin-font);
+
+  margin: 1rem 0;
+  line-height: 1.2rem;
+}
+.markdown-h4{
+  font-weight: 600;
+  font-size: 0.8rem;
+  font-family: var(--franklin-font);
+
+  margin: 0.8rem 0;
+  line-height: 1.2rem;
+}
+.markdown-h5{
+  font-weight: 500;
+  font-style: italic;
+  font-size: 0.8rem;
+  font-family: var(--franklin-font);
+
+  margin: 0.8rem 0;
+  line-height: 1.2rem;
+}
+.markdown-ul{
+  margin: 0.8rem 0;
+  list-style: disc outside none;
+
+}
+.markdown-li{
+  margin-left: 2em;
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+.markdown-img{
+  width: 100%;
+  margin: 0.8rem 0;
+}
