@@ -53,6 +53,10 @@ const markdownWrapperComponents = {
     const { node, ...rest } = props;
     return <img className={styles["markdown-img"]} {...rest} />;
   },
+  blockquote(props: ExtraProps) {
+    const { node, ...rest } = props;
+    return <blockquote className={styles["markdown-blockquote"]} {...rest} />;
+  },
   // code(props: RemarkComponentProps) {
   //   const { node, children, className, ...rest } = props;
   //   const match = /language-(\w+)/.exec(className || "");

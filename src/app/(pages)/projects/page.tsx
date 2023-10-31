@@ -27,7 +27,7 @@ async function Projects() {
         />
       ))}
       <article className={styles["project-footer"]}>
-        Last updated on Dec-01-02
+        Last updated on Oct 31, 2023 (on progress)
       </article>
     </section>
   );

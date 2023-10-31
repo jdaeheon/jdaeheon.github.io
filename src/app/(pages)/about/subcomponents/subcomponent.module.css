@@ -30,7 +30,13 @@
   flex-direction: column;
   gap: 0.8rem;
   font-size: 0.8rem;
+  overflow: hidden;
 }
+.news-item p{
+  font-size: 0.8rem;
+  line-height: 1rem;
+}
+
 .news-item:nth-child(n + 5) {
   display: none;
 }
