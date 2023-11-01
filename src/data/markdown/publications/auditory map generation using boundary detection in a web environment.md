@@ -1,6 +1,6 @@
 ---
 date: "05 Apr, 2022"
-title: "Auditory map generation using boundary detection in a web environment"
+title: "Auditory Map Generation Using Boundary Detection in a Web Environment"
 description: "A design project about simulating force of wave with an array of box geometry"
 venue: ""
 contributors: ["Daeheon Jeong"]
