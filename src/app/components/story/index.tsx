@@ -17,8 +17,9 @@ function Story(props: IStoryProps) {
   const [isHover, setIsHover] = useState(false);
 
   return (
-    <article
+    <Link
       className={styles["story-container"]}
+      href={`/projects/${props.link}`}
       onMouseEnter={() => {
         if (!isHover) setIsHover(true);
       }}
@@ -33,7 +34,7 @@ function Story(props: IStoryProps) {
           alt={props.caption}
         />
       </figure>
-      <Link className={styles["story-item"]} href={`/projects/${props.link}`}>
+      <div className={styles["story-item"]}>
         <h5
           className={`${styles["story-title"]} ${
             isHover ? styles["underline"] : ""
@@ -52,8 +53,8 @@ function Story(props: IStoryProps) {
             more
           </p>
         </div>
-      </Link>
-    </article>
+      </div>
+    </Link>
   );
 }
 

@@ -21,7 +21,7 @@ async function News() {
         );
       })}
       <article className={styles["news-footer"]}>
-        Last updated on Oct 31, 2023 (on progress)
+        {`Lasted updated on ${process.env.UPDATE_DATE}`}
       </article>
     </section>
   );

@@ -35,10 +35,6 @@ export async function getMarkdownArray(location: string) {
       return content;
     })
     .sort((a, b) => b.data.dateObject.getTime() - a.data.dateObject.getTime());
-
-  // const markdownListSorted = markdownList.sort(
-  //   (a, b) => a.data.date.getTime() - b.data.date.getTime()
-  // );
   return markdownList;
 }
 
