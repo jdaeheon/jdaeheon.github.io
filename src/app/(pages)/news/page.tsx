@@ -1,11 +1,10 @@
 import MarkdownWrapper from "@/app/components/markdownWrapper";
-import { getMarkdownArray } from "@/app/utils/common";
+import { buildDate, getMarkdownArray } from "@/app/utils/common";
 import styles from "./page.module.css";
 import React from "react";
 
 async function News() {
   const newsMarkdownList = await getMarkdownArray("news");
-
   return (
     <section className={styles["container"]}>
       <h3>news</h3>
@@ -21,7 +20,8 @@ async function News() {
         );
       })}
       <article className={styles["news-footer"]}>
-        {`Lasted updated on ${process.env.UPDATE_DATE}`}
+        {`Lasted updated on ${buildDate}`}
+        {/* {`Lasted updated on ${process.env.UPDATE_DATE}`} */}
       </article>
     </section>
   );

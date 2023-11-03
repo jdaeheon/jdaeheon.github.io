@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./page.module.css";
-import { getMarkdownArray } from "@/app/utils/common";
+import { buildDate, getMarkdownArray } from "@/app/utils/common";
 
 async function Publications() {
   const publicationList = await getMarkdownArray("publications");
@@ -66,7 +66,7 @@ async function Publications() {
         );
       })}
       <article className={styles["project-footer"]}>
-        {`Lasted updated on ${process.env.UPDATE_DATE}`}
+        {`Lasted updated on ${buildDate}`}
       </article>
     </section>
   );

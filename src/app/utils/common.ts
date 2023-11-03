@@ -2,6 +2,12 @@ import path from "path";
 import fs from "fs";
 import matter from "gray-matter";
 
+export const buildDate = new Intl.DateTimeFormat("en-US", {
+  day: "2-digit",
+  month: "short",
+  year: "numeric",
+}).format(new Date());
+
 export interface IArticleMarkdown {
   date: string;
   title: string;

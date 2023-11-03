@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./page.module.css";
 import { PiCaretDownLight } from "react-icons/pi";
-import { getMarkdownArray } from "@/app/utils/common";
+import { buildDate, getMarkdownArray } from "@/app/utils/common";
 import Story from "@/app/components/story";
 
 async function Projects() {
@@ -27,7 +27,7 @@ async function Projects() {
         />
       ))}
       <article className={styles["project-footer"]}>
-        {`Lasted updated on ${process.env.UPDATE_DATE}`}
+        {`Lasted updated on ${buildDate}`}
       </article>
     </section>
   );
