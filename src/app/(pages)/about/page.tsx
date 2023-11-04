@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./page.module.css";
-import Story from "@/app/components/story";
 import News from "./subcomponents/sub.news";
 import Projects from "./subcomponents/sub.projects";
 import MarkdownWrapper from "@/app/components/markdownWrapper";
