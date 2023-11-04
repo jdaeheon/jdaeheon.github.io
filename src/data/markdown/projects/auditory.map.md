@@ -6,6 +6,7 @@ featured: "true"
 thumbnail: "image/auditory-map/2.png"
 caption: "Project image depicting scene from user trial"
 link: "web-auditory-map-generation"
+type: "research"
 ---
 
 ![Promotional image of the service Healthier](/image/auditory-map/2.png)

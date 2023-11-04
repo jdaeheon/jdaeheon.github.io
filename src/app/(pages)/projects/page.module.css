@@ -22,16 +22,28 @@
   width: 100%;
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: flex-start;
+  /* justify-content: space-between; */
+}
+
+.dropdown{
+  display: flex;
+  /* flex-direction: column; */
+  gap: 1rem;
+  /* justify-content: center;
+  width: 100%; */
+  background-color: whitesmoke;
 }
 
 .filter-button{
-  background-color: white;
+  /* background-color: white; */
+  background-color: whitesmoke;
   border: none;
 
   color: black;
   font-family: var(--franklin-font);
-  min-width: 5rem;
+  font-size: 0.7rem;
+  font-style: italic;
 
   display: flex;
   align-items: center;

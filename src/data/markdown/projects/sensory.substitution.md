@@ -6,6 +6,7 @@ featured: "true"
 thumbnail: "image/touch-assist/1.png"
 caption: "Project image depicting scene from user trial"
 link: "touch-assist"
+type: "research"
 ---
 
 ![Promotional image of the service Healthier](/image/touch-assist/1.png)

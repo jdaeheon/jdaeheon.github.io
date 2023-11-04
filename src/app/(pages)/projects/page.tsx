@@ -6,14 +6,16 @@ import Story from "@/app/components/story";
 
 async function Projects() {
   const projectsMarkdownList = await getMarkdownArray("projects");
-
   return (
     <section className={styles["container"]}>
       <div className={styles["container-header"]}>
         <h3>projects</h3>
-        <button className={styles["filter-button"]}>
-          all <PiCaretDownLight />
-        </button>
+        {/* <div className={styles["dropdown"]}>
+          <button className={styles["filter-button"]}>all</button>
+          <button className={styles["filter-button"]}>project</button>
+          <button className={styles["filter-button"]}>research</button>
+          <button className={styles["filter-button"]}>service</button>
+        </div> */}
       </div>
       {projectsMarkdownList.map((item, i) => (
         <Story

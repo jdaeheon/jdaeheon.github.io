@@ -6,6 +6,7 @@ featured: "true"
 thumbnail: "image/virtual-picasso/1.png"
 caption: "Project image depicting scene from user trial"
 link: "virtual-picasso"
+type: "research"
 ---
 
 ![Photo of user study conducted](/image/virtual-picasso/1.png)

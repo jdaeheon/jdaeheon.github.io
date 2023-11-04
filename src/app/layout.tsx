@@ -1,6 +1,8 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Open_Sans, Bitter, Libre_Franklin } from "next/font/google";
+import Head from "next/head";
+import Script from "next/script";
 
 const openSans = Open_Sans({
   subsets: ["latin"],
@@ -33,7 +35,27 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <meta name="robots" content="noindex" />
+      <Head>
+        <meta name="robots" content="noindex" />
+      </Head>
+      {process.env.NODE_ENV === "production" ? (
+        <>
+          <Script
+            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
+          />
+          <Script id="google-analytics">
+            {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+ 
+          gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}');
+        `}
+          </Script>
+        </>
+      ) : (
+        <></>
+      )}
       <body className={fontClassNames}>{children}</body>
     </html>
   );

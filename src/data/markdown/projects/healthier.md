@@ -6,6 +6,7 @@ featured: "true"
 thumbnail: "image/healthier/1.png"
 caption: "Project image depicting scene from user trial"
 link: "healthier"
+type: "service"
 ---
 
 ![Design concepts of the Healthier interface](/image/healthier/1.png)

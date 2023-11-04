@@ -6,6 +6,7 @@ featured: "true"
 thumbnail: "image/parametric-wave/1.png"
 caption: "Project image depicting scene from user trial"
 link: "parametric-wave"
+type: "design"
 ---
 
 <iframe src="https://three-wave-proj.vercel.app/" width="100%" height="500" style="border: none; padding: none; margin: none;"></iframe>
