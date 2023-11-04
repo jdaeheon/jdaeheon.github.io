@@ -39,14 +39,12 @@
   justify-content: space-between;
 }
 
-
-
 .news-title{
   max-width: 80%;
-
+/* 
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
+  text-overflow: ellipsis; */
 
   font-family: var("--franklin-font");  
   font-weight: 600;
@@ -72,8 +70,6 @@
   }
 
   .news-title{
-    text-overflow: unset;
-    overflow: auto;
-    white-space: wrap;
+    width: 100%;
   }
 }

@@ -119,6 +119,9 @@
     min-width: 100px;
     max-width: 200px;
   }
+  .cover-letter-link-item{
+    font-size: 0.7rem;
+  }
 }
 
 /* news items */
