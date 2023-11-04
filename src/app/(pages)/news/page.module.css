@@ -39,6 +39,8 @@
   justify-content: space-between;
 }
 
+
+
 .news-title{
   max-width: 80%;
 
@@ -60,4 +62,18 @@
   padding: 1rem;
   font-size: 0.6rem;
   font-style: italic;
+}
+
+@media only screen and (max-width: 700px) {  
+  .news-header{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+
+  .news-title{
+    text-overflow: unset;
+    overflow: auto;
+    white-space: wrap;
+  }
 }

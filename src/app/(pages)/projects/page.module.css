@@ -26,19 +26,36 @@
   grid-column: span 3;
 }
 
+
 .sub-menu{  
   grid-column: span 1;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  /* flex-direction: column; */
   gap: 0.3rem;
-  /* justify-content: center;
-  width: 100%; */
-  /* background-color: whitesmoke; */
   color: black;
   font-family: var(--franklin-font);
   font-size: 0.7rem;
 }
+
+@media only screen and (min-width: 401px) and (max-width: 700px) {  
+  .container-header h3{
+    grid-column: span 2;
+  }
+  .sub-menu{
+    grid-column: span 2;
+  }
+}
+
+@media only screen and (max-width: 400px) {  
+  .container-header h3{
+    grid-column: span 1;
+  }
+  .sub-menu{
+    grid-column: span 3;
+  }
+}
+
 
 .sub-menu-button{
   background-color: white;

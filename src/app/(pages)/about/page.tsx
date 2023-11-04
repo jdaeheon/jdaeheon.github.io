@@ -10,42 +10,37 @@ async function About() {
   const coverLetter = await getMarkDownItem("static/cover.letter.md");
   return (
     <div className={styles.container}>
-      <article className={styles["cover-letter"]}>
-        <section className={styles["cover-letter-content"]}>
-          <article className={styles["cover-letter-content-description"]}>
-            <h3>design · research · implement</h3>
-            <MarkdownWrapper>{coverLetter.content}</MarkdownWrapper>
-          </article>
-          <article className={styles["cover-letter-content-link"]}>
-            <h3>links</h3>
-            <Link
-              className={styles["cover-letter-content-link-item"]}
-              href="/cv.pdf"
-            >
-              <u>Curriculum Vitae</u>
-            </Link>
-            <a
-              className={styles["cover-letter-content-link-item"]}
-              href="https://github.com/jdaeheon"
-            >
-              <u>Github</u>
-            </a>
-            <a
-              className={styles["cover-letter-content-link-item"]}
-              href="mailto:neohgeek@gmail.com"
-            >
-              <u>Email</u>
-            </a>
-          </article>
-          <article className={styles["cover-letter-content-aside"]}>
-            <img
-              src={"/profile.jpg"}
-              className={styles["cover-letter-content-photo"]}
-              alt="profile image of Daeheon Jeong"
-            />
-          </article>
-        </section>
-      </article>
+      <section className={styles["cover-letter"]}>
+        <article className={styles["cover-letter-description"]}>
+          <h3>design · research · implement</h3>
+          <MarkdownWrapper>{coverLetter.content}</MarkdownWrapper>
+        </article>
+        <article className={styles["cover-letter-link"]}>
+          <h3>links</h3>
+          <Link className={styles["cover-letter-link-item"]} href="/cv.pdf">
+            <u>Curriculum Vitae</u>
+          </Link>
+          <a
+            className={styles["cover-letter-link-item"]}
+            href="https://github.com/jdaeheon"
+          >
+            <u>Github</u>
+          </a>
+          <a
+            className={styles["cover-letter-link-item"]}
+            href="mailto:neohgeek@gmail.com"
+          >
+            <u>Email</u>
+          </a>
+        </article>
+        <article className={styles["cover-letter-aside"]}>
+          <img
+            src={"/profile.jpg"}
+            className={styles["cover-letter-photo"]}
+            alt="profile image of Daeheon Jeong"
+          />
+        </article>
+      </section>
       <div className={styles["article-divider-container"]}>
         <div className={styles["article-divider"]}></div>
       </div>

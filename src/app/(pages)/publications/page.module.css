@@ -39,7 +39,6 @@
   align-items: flex-start;
   justify-content: flex-start;
   gap: 1.6rem;
-  /* background-color: blue; */
 }
 
 .publications-thumbnail{
@@ -66,13 +65,13 @@
 
 .publications-details-authors{
   display: flex;
+  flex-wrap: wrap;
   gap: 0.8rem;
 }
 
 .publications-details-author-item{
   font-family: var(--bitter-font);
   font-size: 0.8rem;
-  /* background-color: blue; */
 }
 
 .publications-details-other{
@@ -105,4 +104,23 @@
 .publications-details-link-item:hover{
   box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.1);
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 700px) {  
+  .publications-thumbnail{
+    width: 20%;
+  }
+  .publications-detail{
+    width: 80%;
+  }
+  .publications-details-authors{
+    gap: 0.2rem;
+  }
+  .publications-details-other{
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+  .publications-details-links{
+    justify-content: flex-start;
+  }
 }

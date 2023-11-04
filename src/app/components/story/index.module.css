@@ -84,3 +84,23 @@
   text-decoration: underline;
 }
 
+@media only screen and (max-width: 700px) {  
+  .story-figure{
+    grid-column: span 2;
+  }
+  .story-item{
+    grid-column: span 2;
+  }
+}
+
+@media only screen and (max-width: 400px) {  
+  .story-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.6rem;
+    transition: 0.3s;
+  }
+}
