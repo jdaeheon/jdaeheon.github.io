@@ -15,6 +15,7 @@ async function About() {
         <section className={styles["cover-letter-content"]}>
           <article className={styles["cover-letter-content-description"]}>
             <h3>design · research · implement</h3>
+            <p>env: {process.env.NEXT_PUBLIC_GA_ID}</p>
             <MarkdownWrapper>{coverLetter.content}</MarkdownWrapper>
           </article>
           <article className={styles["cover-letter-content-link"]}>
