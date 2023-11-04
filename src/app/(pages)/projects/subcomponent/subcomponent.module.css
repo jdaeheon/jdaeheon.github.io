@@ -1,0 +1,28 @@
+.sub-menu-button{
+  background-color: white;
+  border: none;
+
+  color: black;
+  font-family: var(--franklin-font);
+  font-size: 0.7rem;
+  /* font-style: italic; */
+  border: 1px solid;
+  padding: 0.2rem 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.3rem;
+  cursor: pointer;
+  
+  transition: 0.3s;
+}
+
+.sub-menu-button:hover{
+  box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.button-highlight{
+  text-decoration: underline;
+}

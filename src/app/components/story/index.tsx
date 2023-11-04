@@ -11,6 +11,7 @@ interface IStoryProps {
   content: string;
   date: string;
   link: string;
+  filterClassName?: string;
 }
 
 function Story(props: IStoryProps) {
@@ -18,7 +19,7 @@ function Story(props: IStoryProps) {
 
   return (
     <Link
-      className={styles["story-container"]}
+      className={`${styles["story-container"]} ${props.filterClassName}`}
       href={`/projects/${props.link}`}
       onMouseEnter={() => {
         if (!isHover) setIsHover(true);

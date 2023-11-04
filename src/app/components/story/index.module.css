@@ -5,12 +5,12 @@
   justify-content: center;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.6rem;
+  transition: 0.3s;
 }
 
 .story-figure{
   grid-column: span 3;
   display: flex;
-  
 }
 
 .story-image{

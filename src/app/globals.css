@@ -105,3 +105,11 @@ a {
     color-scheme: dark;
   }
 }
+
+.visible{
+  display: inline-block;
+}
+
+.hidden{
+  display: none !important;
+}

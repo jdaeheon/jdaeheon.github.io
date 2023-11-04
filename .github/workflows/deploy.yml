@@ -71,8 +71,8 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
-      - name: Check env variable
-        run: echo ${{ secrets.NEXT_PUBLIC_GA_ID }}
+      # - name: Check env variable
+      #   run: echo ${{ secrets.NEXT_PUBLIC_GA_ID }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
