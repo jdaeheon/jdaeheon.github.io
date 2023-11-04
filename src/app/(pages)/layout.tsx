@@ -16,6 +16,11 @@ function PageLayout({ children }: { children: React.ReactNode }) {
     <main className={styles.main}>
       <div className={styles.container}>
         <nav className={styles.header}>
+          <img
+            src={"/thumbnail.png"}
+            className={styles["header-hidden-thumbnail"]}
+            alt="hidden thumbnail"
+          />
           <h1 className={styles["header-title"]}>Daeheon Jeong</h1>
           <Link
             className={`${styles["header-button"]} ${isActive("", pathName)}`}

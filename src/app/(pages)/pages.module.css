@@ -29,6 +29,11 @@
   gap: 5rem;
 }
 
+.header-hidden-thumbnail{
+  width:0;
+  height:0;
+}
+
 .header-title{
   color:black;
   font-size: 1rem;
