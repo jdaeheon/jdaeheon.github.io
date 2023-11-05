@@ -4,12 +4,12 @@ title: "Healthier - A Preemptive Diagnosis Service"
 description: "Implemented web 3D interface to assist patient specify their area of symptom"
 featured: "true"
 thumbnail: "image/healthier/1.png"
-caption: "Project image depicting scene from user trial"
+caption: "A design concepts of the Healthier interface"
 link: "healthier"
 type: "service"
 ---
 
-![Design concepts of the Healthier interface](/image/healthier/1.png)
+![A design concepts of the Healthier interface](/image/healthier/1.png)
 
 ### A service for the patient
 

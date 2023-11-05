@@ -4,7 +4,7 @@ title: "Sonar - Web Auditory Map Generation"
 description: "Utilized boundary detection for auditory map generation for BLV."
 featured: "true"
 thumbnail: "image/auditory-map/2.png"
-caption: "Project image depicting scene from user trial"
+caption: "Project image depicting a scene from user trial"
 link: "web-auditory-map-generation"
 type: "research"
 ---
@@ -15,10 +15,10 @@ Sonar is a project aimed at assisting BLV users in terms of navigating a webpage
 
 <div style="display: flex;">
     <div style="flex: 1; padding: 5px;">
-        <img src="/image/auditory-map/1.png" alt="Image 2" style="width: 100%; object-fit: cover; height: 300px;">
+        <img src="/image/auditory-map/1.png" alt="The researcher is guiding the participant" style="width: 100%; object-fit: cover; height: 300px;">
     </div>
     <div style="flex: 1; padding: 5px;">
-        <img src="/image/auditory-map/3.png" alt="Image 3" style="width: 100%;
+        <img src="/image/auditory-map/3.png" alt="The participant is testing the Sonar using the disability test kit" style="width: 100%;
         object-fit: cover; height: 300px;">
     </div>
 </div>

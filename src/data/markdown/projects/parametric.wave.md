@@ -4,7 +4,7 @@ title: "Parametric Wave"
 description: "A design project about simulating force of wave with an array of box geometry"
 featured: "true"
 thumbnail: "image/parametric-wave/1.png"
-caption: "Project image depicting scene from user trial"
+caption: "A sample screenshot of the project"
 link: "parametric-wave"
 type: "design"
 ---
@@ -17,14 +17,14 @@ Parametric Wave is a project conducted as a part of a computer graphics class at
 
 <div style="display: flex;">
     <div style="flex: 1; padding: 5px;">
-        <img src="/image/parametric-wave/2.png" alt="Image 2" style="width: 100%; object-fit: cover; height: 250px;">
+        <img src="/image/parametric-wave/2.png" alt="Overall view of the parametric wave" style="width: 100%; object-fit: cover; height: 250px;">
     </div>
     <div style="flex: 1; padding: 5px;">
-        <img src="/image/parametric-wave/3.png" alt="Image 3" style="width: 100%;
+        <img src="/image/parametric-wave/3.png" alt="Sample image of an antropy accumulation" style="width: 100%;
         object-fit: cover; height: 250px;">
     </div>
 </div>
 
-Each geometry changes its height with time as a variable, creating an illusion of force accumulation. The mathematical logic behind the wave was implemented with the help of the documentation by the [Nvidia](https://developer.nvidia.com/gpugems/gpugems/part-i-natural-effects/chapter-1-effective-water-simulation-physical-models). The equation is consisted of simple trigonometric functions, yet, it was capable of simulating a persuasive visual. A beauty of mathematics! With an additional touch on the materials and the lighting, the Parametric Wave presents accumulating entropy of the force, rotating at in angle, with a beautiful gradient on its surface.
+Each geometry changes its height with time as a variable, creating an illusion of force accumulation. The mathematical logic behind the wave was implemented with the help of the documentation by the [Nvidia](https://developer.nvidia.com/gpugems/gpugems/part-i-natural-effects/chapter-1-effective-water-simulation-physical-models). The equation consisted of simple trigonometric functions, yet, it was capable of simulating a persuasive visual. A beauty of mathematics! With an additional touch on the materials and the lighting, the Parametric Wave presents accumulating entropy of the force, rotating at an angle, with a beautiful gradient on its surface.
 
 
