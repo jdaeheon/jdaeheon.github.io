@@ -17,17 +17,23 @@ async function Projects() {
         </div>
       </Link>
       <section className={styles["project-content"]}>
-        {projectsMarkdownList.map((item, i) => (
-          <Story
-            key={i}
-            title={item.data.title}
-            thumbnailURL={item.data.thumbnail}
-            caption={item.data.caption}
-            content={item.data.description}
-            date={item.data.date}
-            link={item.data.link}
-          />
-        ))}
+        {projectsMarkdownList.map((item, i) => {
+          if (item.data.featured === "true") {
+            return (
+              <Story
+                key={i}
+                title={item.data.title}
+                thumbnailURL={item.data.thumbnail}
+                caption={item.data.caption}
+                content={item.data.description}
+                date={item.data.date}
+                link={item.data.link}
+              />
+            );
+          } else {
+            return <></>;
+          }
+        })}
       </section>
     </>
   );
