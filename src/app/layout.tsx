@@ -26,6 +26,19 @@ export const metadata: Metadata = {
   title: "Daeheon Jeong",
   description:
     "Undegraduate student interested in HAI, Visualization, and Accessibility",
+  robots: {
+    index: false,
+    follow: false,
+    nocache: true,
+    googleBot: {
+      index: false,
+      follow: false,
+      noimageindex: true,
+      "max-video-preview": -1,
+      "max-image-preview": "none",
+      "max-snippet": -1,
+    },
+  },
 };
 
 export default function RootLayout({
