@@ -5,7 +5,7 @@ description: "An engineering/research project about robot teleoperation with foc
 featured: "true"
 thumbnail: "image/robot-teleoperation/1.jpeg"
 caption: "The overiew of the interface"
-link: "conversational-guide"
+link: "robot-teleoperation"
 type: "research"
 ---
 
