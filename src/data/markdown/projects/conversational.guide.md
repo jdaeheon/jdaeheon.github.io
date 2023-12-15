@@ -9,7 +9,7 @@ link: "conversational-guide"
 type: "research"
 ---
 
-![Photo of an user study conducted](/image/conversational-guide/1.png)
+![Photo of the user study conducted](/image/conversational-guide/1.png)
 
 The conversational audio guide is an experimental project about the collaborative interaction between humans and AI agents in viewing artwork. It aims to understand how AI can assist humans in constructivist learning, cultivating a more lightweight yet effective way of viewing the artwork. From an observation of how the museum visitors behave within the exhibitory setting, the conversational audio guide started with an easy question *"Can the AI be an enjoyable companion who brings a theather-like experience to the solemn environment primarily known as the White Box?"* Through the demonstration of the Conversational audio guide, our team was able to see a variety of expectations given the concept from the participants and the corresponding various interactions. The conversational audio guide, primarily through the demonstration of its potential to imitate the well-known figure, suggests a possibility that lies within the narrative presentation of education via AI.
 
