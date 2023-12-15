@@ -9,6 +9,7 @@ link: "robot-teleoperation"
 type: "research"
 ---
 
+![The overview of the interface with point cloud viewer](/image/robot-teleoperation/0.jpeg)
 ![The overview of the interface with point cloud viewer](/image/robot-teleoperation/1.jpeg)
 ![A screenshot with modules in each block](/image/robot-teleoperation/2.jpeg)
 ![A point cloud sensor calibration](/image/robot-teleoperation/3.jpeg)
