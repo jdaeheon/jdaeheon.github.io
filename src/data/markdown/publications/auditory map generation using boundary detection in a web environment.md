@@ -1,8 +1,8 @@
 ---
-date: "23 Dec, 2022"
+date: "02 Feb, 2022"
 title: "Auditory Map Generation Using Boundary Detection in a Web Environment"
-venue: "Korea Computer Congress Proceedings"
-contributors: ["Daeheon Jeong", "Yonghyeon Kim", "Jongha Park", "Myeongjae Cho"]
+venue: "HCI Korea Proceedings"
+contributors: ["Daeheon Jeong", "Jeong Hwangi", "Florian Reuting"]
 links:
   RISS: "http://www.riss.kr/link?id=A108061858"
   translation: ""
