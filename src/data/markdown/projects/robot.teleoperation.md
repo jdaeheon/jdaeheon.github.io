@@ -39,4 +39,4 @@ Uviz also supports an orthographic camera, to assist the observer in accurately 
 <br>
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/VUA8uCPbid4?si=LuZ3STM_L2tZCIoD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-Uviz was officially integrated as the robot's positional uncertainty monitoring module for the project in the video.
+Uviz was officially integrated as the robot's positional uncertainty monitoring module for the project described in the video.
