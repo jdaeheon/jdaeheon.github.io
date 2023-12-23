@@ -21,7 +21,10 @@ async function Project({ params }: IProjectProps) {
 
   return (
     <section className={styles["container"]}>
-      <h3 className={styles["container-title"]}>{data.title}</h3>
+      <section className={styles["container-title"]}>
+        <h3 className={styles["heading-title"]}>{data.title}</h3>
+        <h3 className={styles["heading-description"]}>{data.description}</h3>
+      </section>
       <article className={styles["container-article"]}>
         <MarkdownWrapper>{content}</MarkdownWrapper>
       </article>

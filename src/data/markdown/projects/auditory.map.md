@@ -1,7 +1,7 @@
 ---
-date: "1 Jan, 2022"
+date: "1 Oct, 2021"
 title: "Sonar - Web Auditory Map Generation"
-description: "Utilized boundary detection for auditory map generation for BLV."
+description: "A sensory substitution interface using canny edge detection for BLV individuals' mouse usage"
 featured: "true"
 thumbnail: "image/auditory-map/2.png"
 caption: "Project image depicting a scene from user trial"
@@ -9,9 +9,9 @@ link: "web-auditory-map-generation"
 type: "research"
 ---
 
-![Promotional image of the service Healthier](/image/auditory-map/2.png)
+![The experiment participant is looking around with the low-vision simulator on](/image/auditory-map/2.png)
 
-Sonar is a project aimed at assisting BLV users in terms of navigating a webpage through sound. The initial idea is based on the classic algorithm mainly known as a canny edge detection. Given information about the edges of the image, the Sonar creates a sound map of the webpage by matching the cursor coordinates with the light intensity value of the processed webpage image. The user, by moving the cursor throughout the screen, can easily locate the existence of the element within the page. The Sonar is aimed to support BLV users with a low degree of visual impairment, making the cursor usage more viable by substituting the blindfolded areas within the sight.
+Sonar is a project aimed at assisting BLV users in terms of navigating a webpage through sound. The initial idea is to provide low-vision individuals guidance when navigating the webpage via mouse. With canny edge detection, Sonar traces out the contour of the web components. Followingly, it creates a sound map of the webpage by matching current cursor coordinates with the light intensity value of the outline.
 
 <div style="display: flex;">
     <div style="flex: 1; padding: 5px;">
@@ -23,7 +23,12 @@ Sonar is a project aimed at assisting BLV users in terms of navigating a webpage
     </div>
 </div>
 
-The canny edge detection, through a Gaussian filter, derives an intensity gradient given an image. Through thresholding, it efficiently traces out the border of the elements within the image at a low computing cost, making real-time processing possible. Also to enhance the usability, our team implemented a filtering process, smoothing the light intensity change to adjust the alert volume gradually.
+
+Therefore as the low-vision user slides the mouse over the item, one can identify the presence and the size of the web components. By moving the mouse, Sonar provides information about the relative distance between each element. The primary target of Sonar is a people with a low degree of visual impairment, capable of using the mouse. The system substitutes the blind spot within the operation of the mouse.
+
+![An image depicting how the web component transforms into an auditory map using canny edge detection and a Gaussian blur](/image/auditory-map/4.png)
+
+The process initiates with the canny edge detection deriving the intensity gradient given an image. Through thresholding, it efficiently traces out the border of the elements within the image at a low computing cost, making real-time processing possible. Also to enhance the usability, our team implemented a filtering process, smoothing the light intensity change to adjust the alert volume gradually.
 
 ![Promotional image of the service Healthier](/image/auditory-map/6.png)
 
