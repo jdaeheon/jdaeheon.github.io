@@ -1,7 +1,7 @@
 ---
 date: "24 Aug, 2022"
 title: "Healthier - A Preemptive Diagnosis Service"
-description: "Implemented web 3D interface to assist patient specify their area of symptom"
+description: "A 3D web interface designed to help patients identify and specify the area of their body where symptoms are present"
 featured: "true"
 thumbnail: "image/healthier/1.png"
 caption: "A design concepts of the Healthier interface"
