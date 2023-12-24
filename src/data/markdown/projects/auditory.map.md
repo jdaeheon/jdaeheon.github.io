@@ -13,7 +13,7 @@ type: "research"
 
 ### Providing cue for mouse navigation
 
-Sonar is a project aimed at assisting BLV users' web navigation through sound. It provides low-vision individuals guidance when navigating the webpage via mouse by using the sound. With canny edge detection, Sonar traces out the contour of the web components. Followingly, it creates a sound map of the webpage by matching current cursor coordinates with the light intensity value of the contour.
+Sonar is a project aimed at assisting low-vision users' web navigation through sound. It provides a guidance on component location and size. With canny edge detection, Sonar traces out the contour of the web components. Followingly, it creates a sound map of the webpage by matching current cursor coordinates with the light intensity value of the contour.
 
 <div style="display: flex;">
     <div style="flex: 1; padding: 5px;">

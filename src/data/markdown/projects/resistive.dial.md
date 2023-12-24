@@ -2,7 +2,7 @@
 date: "07 Mar, 2023"
 title: "Lighthouse: A Resistive Dial for Screen Reader Navigation"
 description: "A research project about the rotary mapping of linear information for better navigation"
-featured: "false"
+featured: "true"
 thumbnail: "image/resistive-dial/1.png"
 caption: "The image of the software front page"
 link: "resistive-dial"
