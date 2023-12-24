@@ -36,7 +36,7 @@ The process initiates with the canny edge detection deriving the intensity gradi
 
 ![Promotional image of the service Healthier](/image/auditory-map/6.png)
 
-## A Usability Test
+### A Usability Test
 
 Within the project, we conducted a usability test with 5 participants using a visual impairment simulator. The test was designed to comparatively analyze the task accomplish speed with five criteria. Each procedure was pre-specified with guidelines, including an introduction and guidance by the researcher. While the statistical significance was not measured we observed increase in completion speed compared to the baseline condition. Sonar was awarded the best paper at the [HCI Korea Conference 2022](https://conference.hcikorea.org/hcik2022/creative/awarded_CA.asp).
 

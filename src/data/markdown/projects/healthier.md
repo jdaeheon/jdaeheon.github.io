@@ -11,36 +11,42 @@ type: "service"
 
 ![A design concepts of the Healthier interface](/image/healthier/1.png)
 
-### A service for the patient
+### A Service for the Patient
 
-Healthier is a student-led start-up project, revolving around the topic of preemptive provision of the diagnosis. The project aimed at providing a logic-based diagnosis to the patients, before they visit the hospital. Thereby the primary object lies within an approachable interface design in which the patients can easily suggest the symptoms they have.
+Healthier is a student start-up project, suggesting a service for preemptive provision of the diagnosis. The project aimed at providing a logic-based diagnosis to the patients, before the hospital visit. Thereby the primary objective lies within an approachable interface design in which the patients can easily suggest the symptoms they have without verbal communication.
 
-### Design Identification
+<br>
 
-Within the design of the Healthier, a small group within the team brainstormed an interface that can provide cognitively intuitive ways for patients to specify the symptomatic region without the guidance of the professionals. The idea initially started with an intuition that selecting an area within the object shape of a human body would be the natural way to convey the information.
+### Design Implementation
 
-To implement the idea, the initial prototype was provided as follows. Using a [react-three-fiber](https://docs.pmnd.rs/react-three-fiber) and [lamina](https://github.com/pmndrs/lamina) (*which is currently deprecated*), the position of the cursor was translated into object space through ray casting. Then, each coordinate was indexed as a state, persisting until the page reloads. Using GLSL programming, each coordinate was transferred to the GPU, giving each vertex a distance to the coordinates within the model space, making the rendering of gradient shading possible. With a time-variant variable, an animation was added to the selection visualization.
+Within the design of the Healthier, a small group within the team brainstormed an interface that can assist patients to intuitively suggest their symptomatic region. The idea initially started with the idea that selecting body parts within the shape of the human body would be the most natural way to convey information.
+
+To implement the idea, we implemented a web-based interactable body shape interface. Using a [react-three-fiber](https://docs.pmnd.rs/react-three-fiber) and [lamina](https://github.com/pmndrs/lamina) (*which is currently deprecated*), we loaded a body model and mapped the cursor position using ray casting. Each cursor position was indexed as a state, persisting until the page reloads. With GLSL, the position was transferred to the GPU, creating gradient shading through vertex distance calculation to the cursor position. With a time-variant variable, the gradient morphed its size giving breathing-like animation.
+
+<br>
 
 ![Promotional image of the service Healthier](/image/healthier/2.png)
 
-### Implementation
+### Addressing Performance Bottleneck
 
-In the development of the service-ready product, the main challenge of the design was to reduce the load time of the model. Initially, we simplified the shape of the model to reduce the number of the vertex. To weigh the quality of the model, while maintaining the loading speed of the page, two methods were proposed. 
+The main challenge of the interface design was the performance optimization. Initially, to reduce the model load time, we simplified the model shape to minimize the vertex count. Concurrently to weigh the model quality, two methods were implemented. 
 
-- (1) Texture Baking: Bake the shading information to reduce unnecessary calculations regarding the lighting in the scene.
-This was especially important to make the page viable within the mobile development environment. Texture baking helped maintain the quality of the texture while reducing the number of light within the scene
+- (1) *Texture Baking:* Shaing bake to reduce the lighting calculations within the scene.
+This was especially important to make the interface viable in the mobile environment. Texture baking helped maintain the texture quality while reducing the light count.
 
-- (2) Smooth Shading: Simulate a curvy surface to each vertex via interpolation on a flat surface. To maintain the page loading speed, suppressing the amount of the vertex within the model was crucial. Yet, as our model was curvilinear for the most part, a reduction in the number of vertices led to substantial degrading within the model quality. Smooth shading helped us to maintain the quality while compressing the model from 4~5mb to less than a megabyte. 
+- (2) *Smooth Shading:* Simulate a curvy surface on a flat surface through shade interpolation. Our body model was mostly curvilinear hence a reduction in vertex count led to substantial quality degrading. Smooth shading helped maintain the model quality while compressing the model size from 4~5mb to less than a megabyte. 
+
+<br>
 
 ![Image of a prototype interface](/image/healthier/3.png)
 
 ### The Gwi-yo-mi
 
-By doing so, our team was able to achieve a novel interface based on WebGL. Named "gwi-yo-mi", meaning a "cutee" in Korean, this interface served as a front face for the project Healthier.
+Starting from the prototype depicted above, our team successfully implemented the 3D body part selection into the service. Named "gwi-yo-mi", meaning a "cutee" in Korean, the interface was deployed as a front face for the project Healthier.
 
 ![Image of a body-selection interface including gwi-yo-mi](/image/healthier/4.png)
 
 ### Behance 
-A link to project behance. Please support our brilliant designers with a solid like! 
+For further information about the project, please follow the link below and support our brilliant designers with a solid like! 
 
 <iframe src="https://www.behance.net/embed/project/152390505?ilo0=1" height="100" width="100%" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe>
