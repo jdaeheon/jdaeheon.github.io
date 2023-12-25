@@ -11,7 +11,7 @@ type: "research"
 
 ![The experiment participant is looking around with the low-vision simulator on](/image/auditory-map/2.png)
 
-### Providing cue for mouse navigation
+### Providing cues for mouse navigation
 
 Sonar is a project aimed at assisting low-vision users' web navigation through sound. It provides a guidance on component location and size. With canny edge detection, Sonar traces out the contour of the web components. Followingly, it creates a sound map of the webpage by matching current cursor coordinates with the light intensity value of the contour.
 
