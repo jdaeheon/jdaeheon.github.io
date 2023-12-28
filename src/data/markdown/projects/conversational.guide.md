@@ -20,6 +20,8 @@ The museum was perceived as an optimal ground for testing the hypothesis, as it 
 
 Specifically, we challenged impersonating the agent as an artist to (1) increase the perceived social characteristics of the agent and (2) bring a theater-like experience to the museum environment. Based on the constructivist framework, we dimmed both points to be critical for the learning to take place within the dialogue. Through iterative design procedures, we increased the narrative details of the response to implement the impersonation.
 
+<br>
+
 ### System Evaluation
 
 Through the demonstration of the conversational audio guide, our team was able to identify varying user expectations and evaluation of the system. Generally, the idea is perceived as interesting and the participants evaluated the interaction to be beneficial for appreciating the art. Meanwhile, the richness of the dialogue and the subsequent gain largely differed between the participants. The participants with more interest in the artwork and the field of art showed a greater tendency to connect with the agent.
@@ -33,6 +35,8 @@ Through the demonstration of the conversational audio guide, our team was able t
         object-fit: cover; height: 300px;">
     </div>
 </div>
+
+<br>
 
 ### Conversational Agent as a Learning Partner
 

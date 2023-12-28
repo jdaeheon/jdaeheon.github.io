@@ -20,11 +20,19 @@ That is, Lighthouse lets the users themselves create haptic anchors. With a tap,
 <!-- 
 to navigate the linear space of the screen reader and map the information to linear space and  While the dial interface has been suggested beforehand, the Lighthouse focuses on dynamic simulation of the force and resistance within the rotation motion. The implementation is based on the Brushless DC Motor. The Lighthouse suggests an improved way to interact and endow control over the information for low-vision users. -->
 
+<br>
+
 ![Photo of an user study conducted](/image/resistive-dial/2.png)
 
 ### Previous Limitations
 
 Previously, a series of research projects have attempted to give more precise control over the screen reader. Two primary approaches that are suggested were (1) mapping the visual information in corresponding plane space and (2) transforming the information to the linear space. The former focuses on the provision of touchable mediums that the user can index by the physical characteristics, such as corners, edges, or protruding surfaces.
+
+Plane space has an advantage as it maps the information on the screen to surface without changes. A user can index by the physical characteristics, such as corners, edges, or protruding surfaces to relative position [1]. While the approach is most intuitive, the challenge lies in its versatility. The approach relies heavily on creating an informational index that is constant and replicable, hence subject to the positional constraint, i.e., the interface should be able to contain all information in a single layout. 
+
+The linear transformation transforms the information linearly and maps each position in a finite line space between the start and end (e.g., the screen reader cursor moves linearly). Through transformation, the user can memorize the information position in linear space [2]. This is known to increase the information navigation speed, notably in situations where the webpage or the document is interweaved with multiple links.
+
+<br>
 
 <div style="display: flex;">
     <div style="flex: 1; padding: 5px;">
@@ -36,10 +44,13 @@ Previously, a series of research projects have attempted to give more precise co
     </div>
 </div>
 
-Plane space has an advantage as it maps the information on the screen to surface without changes. A user can index by the physical characteristics, such as corners, edges, or protruding surfaces to relative position. While the approach is most intuitive, the challenge lies in its versatility. The approach relies heavily on creating an informational index that is constant and replicable, hence subject to the positional constraint, i.e., the interface should be able to contain all information in a single layout. 
-
-The linear transformation transforms the information linearly and maps each position in a finite line space between the start and end (e.g., the screen reader cursor moves linearly). Through transformation, the user can memorize the information position in linear space. This is known to increase the information navigation speed, notably in situations where the webpage or the document is interweaved with multiple links.
-
 ### Radial Transformation
 
-The Lighthouse develops upon the linear transformation and further develops the linear space into radial space. The benefit of radial space is that it is unbounded. Additionally, using Brushless DC motors, Lighthouse provides customizable haptic feedback. The key takeaway is to provide dynamically mapped feedback on rotation so that the user can freely index the information of interest and revisit it anytime. In Lighthouse, these 'haptic anchors' have multiple adjustable attributes including, position, strength, and texture. By combining these attributes, the user can identify information characteristics such as relevancy, importance, and hierarchy.
+The Lighthouse develops upon the linear transformation and further develops the linear space into radial space. The benefit of radial space is that it is unbounded [3]. Additionally, using Brushless DC motors, Lighthouse provides customizable haptic feedback. The key takeaway is to provide dynamically mapped feedback on rotation so that the user can freely index the information of interest and revisit it anytime. In Lighthouse, these 'haptic anchors' have multiple adjustable attributes including, position, strength, and texture. By combining these attributes, the user can identify information characteristics such as relevancy, importance, and hierarchy.
+
+<br>
+
+### Reference
+- [1] Khurana, Rushil, et al. "Nonvisual interaction techniques at the keyboard surface." Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems. 2018.
+- [2] Baldwin, Mark S., et al. "The tangible desktop: a multimodal approach to nonvisual computing." ACM Transactions on Accessible Computing (TACCESS) 10.3 (2017): 1-28.
+- [3] Asakawa, Chieko, et al. "TAJODA: Proposed tactile and jog dial interface for the blind." IEICE TRANSACTIONS on Information and Systems 87.6 (2004): 1405-1414.
