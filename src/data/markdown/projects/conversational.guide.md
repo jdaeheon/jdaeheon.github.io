@@ -11,7 +11,18 @@ type: "research"
 
 ![Photo of the user study conducted](/image/conversational-guide/1.png)
 
-The conversational audio guide is an experimental project about the collaborative interaction between humans and AI agents in viewing artwork. It aims to understand how AI can assist humans in constructivist learning, cultivating a more lightweight yet effective way of viewing the artwork. From an observation of how the museum visitors behave within the exhibitory setting, the conversational audio guide started with an easy question *"Can the AI be an enjoyable companion who brings a theather-like experience to the solemn environment primarily known as the White Box?"* Through the demonstration of the Conversational audio guide, our team was able to see a variety of expectations given the concept from the participants and the corresponding various interactions. The conversational audio guide, primarily through the demonstration of its potential to imitate the well-known figure, suggests a possibility that lies within the narrative presentation of education via AI.
+### A Conversational Learning
+
+The conversational audio guide is an exploratory system design project about conversational learning between humans and AI.
+In the project, we designed a conversational agent that impersonates the virtual artist to offer a pedagogic dialogue.
+The idea initially started from a question *"Can the AI promote critical thinking and reflection to deepen the understanding of the subject as a human mentor?"* 
+The museum was perceived as an optimal ground for testing the hypothesis, as it naturally invites open interpretation.
+
+Specifically, we challenged impersonating the agent as an artist to (1) increase the perceived social characteristics of the agent and (2) bring a theater-like experience to the museum environment. Based on the constructivist framework, we dimmed both points to be critical for the learning to take place within the dialogue. Through iterative design procedures, we increased the narrative details of the response to implement the impersonation.
+
+### System Evaluation
+
+Through the demonstration of the conversational audio guide, our team was able to identify varying user expectations and evaluation of the system. Generally, the idea is perceived as interesting and the participants evaluated the interaction to be beneficial for appreciating the art. Meanwhile, the richness of the dialogue and the subsequent gain largely differed between the participants. The participants with more interest in the artwork and the field of art showed a greater tendency to connect with the agent.
 
 <div style="display: flex;">
     <div style="flex: 1; padding: 5px;">
@@ -23,4 +34,6 @@ The conversational audio guide is an experimental project about the collaborativ
     </div>
 </div>
 
-The study, we found that users had a high level of expectation given the idea of the conversational audio guide. It was assumed to give them a personalized experience with a degree of social interaction. The characterized agent has room for potential, as it can bring in a role-play-like aspect to the education. We hope to further extend the knowledge over the characterized agent, and the conversational audio guide is a proof-of-concept suggesting various implications within the direction.
+### Conversational Agent as a Learning Partner
+
+The conversational agent is being integrated into the classroom at a fast pace. Its previous role as an assistant handing out information is transforming to a more collaborative role, giving directions and offering evaluation. While such a role is mostly limited due to the innate instability of the language model in providing coherent answers, it suggests a remarkable potential for increasing educational accessibility. Precisely, an easily distributable verbal agent with a vast knowledge base can offer learning opportunities to disabled and marginalized groups. Through the exploratory design of the conversational audio guide, we suggest a proof-of-concept for the constructivist learning agent and the following design implications.
