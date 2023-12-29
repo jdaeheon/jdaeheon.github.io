@@ -35,7 +35,7 @@ Based on the API, Uviz supports interactive animations such as drag-and-drop and
 
 ### Combining Visualization Techniques
 
-In response to various research needs, Uviz implemented various modules. These include line charts, radar, heat maps, geographical maps, and other novel techniques. Each specializes in revealing the multi-variate positional estimate and situational context in numeric values. To implement each idea, Uviz combines Canvas, SVG, and MediaStream (WebRTC) to achieve each visualization method. Additionally, Uviz utilizes the D3.js interpolation to provide a smooth animation experience.
+In response to various research needs, Uviz implemented multiple visualization modules. These include line charts, radar, heat maps, geographical maps, and other novel techniques. Each specializes in revealing the multi-variate positional estimate and situational context in numeric values. To implement each idea, Uviz combines Canvas, SVG, and MediaStream (WebRTC) to achieve each visualization method. Additionally, Uviz utilizes the D3.js interpolation to provide a smooth animation experience.
 
 ![A screenshot with modules in each block](/image/robot-teleoperation/2.jpeg)
 
