@@ -41,15 +41,9 @@ async function About() {
           />
         </article>
       </section>
-      <div className={styles["article-divider-container"]}>
-        <div className={styles["article-divider"]}></div>
-      </div>
       <article className={styles["news"]}>
         <News />
       </article>
-      <div className={styles["article-divider-container"]}>
-        <div className={styles["article-divider"]}></div>
-      </div>
       <article className={styles["projects"]}>
         <Projects />
       </article>

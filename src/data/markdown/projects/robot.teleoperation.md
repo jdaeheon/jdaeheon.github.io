@@ -13,7 +13,7 @@ type: "research"
 
 ### A Robot Position Visualization Interface
 
-Uviz is a robot positional awareness (*localization*) visualization interface for monitoring the autonomous robot in teleoperation settings. The primary role of Uviz is to let the researcher correctly understand how the robot is currently perceiving its position regarding the situational context. The primary challenge is to visualize multiple estimations at once involving heterogeneous data.
+Uviz is a robot positional awareness (*localization*) visualization interface for monitoring the autonomous robot in teleoperation settings. The primary role is to let the researcher correctly understand how the robot is currently perceiving its position regarding the situational context. Therefore, the main challenge was to visualize multiple estimations at once involving heterogeneous data.
 
 Specifically, Uviz addresses two main conceptual functions in implementation. (1) A versatile interface that can accommodate both real-time abstract monitoring and post-experiment in-depth analysis. (2) A cost-effective visualization that can augment the researcher's perception with limited data considering the network constraint of the remote operation setting.
 

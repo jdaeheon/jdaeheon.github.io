@@ -28,13 +28,15 @@
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: column;
-  gap: 0.8rem;
+  /* gap: 0.8rem; */
+  gap: 0.2rem;
   font-size: 0.8rem;
+  font-size: 0.7rem;
   overflow: hidden;
 }
 .news-item p{
   font-size: 0.8rem;
-  line-height: 1rem;
+  line-height: 1.2rem;
 }
 
 .news-item:nth-child(n + 5) {
@@ -51,7 +53,9 @@
 }
 .news-item-date{
   width: 100%;
-  font-size: 0.6rem;
+  /* font-size: 0.6rem; */
+  font-size: 0.6rem !important;
+  /* font-size: 0.1rem; */
 }
 
 @media only screen and (max-width: 700px) {  
