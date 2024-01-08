@@ -8,7 +8,7 @@ thumbnail: ""
 
 I'm an undergraduate researcher pursuing a bachelor's in economics and software.
 My consistent interest lies in improving our cognitive ability through artificial intelligence.
-And I've organized multiple projects regarding my interest.
+And I've organized multiple projects regarding the topic.
 
 These projects navigate the topic of artificial intelligence, learning science, accessibility, and visualization.
 With projects, I was advised by [Prof. Yongsoon Choi](http://lifestylemedia.org/) and [Dr. Giseop Kim](https://gisbi-kim.github.io/).

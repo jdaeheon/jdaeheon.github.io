@@ -25,7 +25,8 @@
 }
 .news-item{
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
   /* gap: 0.8rem; */
