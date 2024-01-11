@@ -19,9 +19,9 @@ Healthier is a student start-up project, suggesting a service for preemptive pro
 
 ### Design Implementation
 
-Within the design of the Healthier, a small group within the team brainstormed an interface that can assist patients to intuitively suggest their symptomatic region. The idea initially started with the idea that selecting body parts within the shape of the human body would be the most natural way to convey information.
+Within the design of the Healthier, a small group within the team brainstormed an interface that can assist patients to intuitively suggest their symptomatic region. The initial idea was to let the users naturally select body parts within the whole body shape.
 
-To implement the idea, we implemented a web-based interactable body shape interface. Using a [react-three-fiber](https://docs.pmnd.rs/react-three-fiber) and [lamina](https://github.com/pmndrs/lamina) (*which is currently deprecated*), we loaded a body model and mapped the cursor position using ray casting. Each cursor position was indexed as a state, persisting until the page reloads. With GLSL, the position was transferred to the GPU, creating gradient shading through vertex distance calculation to the cursor position. With a time-variant variable, the gradient morphed its size giving breathing-like animation.
+To implement the idea, we designed a web-based interactable body shape interface. Using a [react-three-fiber](https://docs.pmnd.rs/react-three-fiber) and [lamina](https://github.com/pmndrs/lamina) (*which is currently deprecated*), we loaded a body model and mapped the cursor position using ray casting. Each cursor position was indexed as a state, persisting until the page reloads. With GLSL, the position was transferred to the GPU, creating gradient shading through vertex distance calculation to the cursor position. With a time-variant variable, the gradient morphed its size creating a breathing-like animation.
 
 <br>
 
@@ -31,7 +31,7 @@ To implement the idea, we implemented a web-based interactable body shape interf
 
 The main challenge of the interface design was the performance optimization. Initially, to reduce the model load time, we simplified the model shape to minimize the vertex count. Concurrently to weigh the model quality, two methods were implemented. 
 
-- (1) *Texture Baking:* Shaing bake to reduce the lighting calculations within the scene.
+- (1) *Texture Baking:* Baking a texture to reduce the lighting calculations within the scene.
 This was especially important to make the interface viable in the mobile environment. Texture baking helped maintain the texture quality while reducing the light count.
 
 - (2) *Smooth Shading:* Simulate a curvy surface on a flat surface through shade interpolation. Our body model was mostly curvilinear hence a reduction in vertex count led to substantial quality degrading. Smooth shading helped maintain the model quality while compressing the model size from 4~5mb to less than a megabyte. 
