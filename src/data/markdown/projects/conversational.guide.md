@@ -42,6 +42,8 @@ Through the demonstration of the conversational audio guide, our team was able t
 
 The conversational agent is being integrated into the classroom at a fast pace [3]. Its previous role as an assistant handing out information is transforming to a more collaborative role, giving directions and offering evaluation. An increasing presence of knowledgeable agents that are replicable at scale suggests a crucial chance for expanding educational accessibility. Precisely, an agent that distributes knowledge through dialogue suggests lightweight learning for groups previously suffering from short attention spans both mentally and physically (e.g., low-vision, attention deficit). Based on this idea, the study suggests an exploratory design of the conversational audio guide, an agent impersonating an artist to provide constructivist learning. Through study, we were able to identify learning effects and design directions for agent-mediated art-pedagogic dialogue.
 
+![Photo of the user study conducted](/image/conversational-guide/response.gif)
+
 <br>
 
 ### Reference

@@ -9,13 +9,15 @@ link: "robot-teleoperation"
 type: "research"
 ---
 
-![The overview of the interface with point cloud viewer](/image/robot-teleoperation/5.jpeg)
+![The overview of the interface with point cloud viewer](/image/robot-teleoperation/overall.gif)
 
 ### A Robot Position Visualization Interface
 
 Uviz is a robot positional awareness (*localization*) visualization interface for monitoring the autonomous robot in teleoperation settings. The primary role is to let the researcher correctly understand how the robot is currently perceiving its position regarding the situational context. Therefore, the main challenge was to visualize multiple estimations at once involving heterogeneous data.
 
 Specifically, Uviz addresses two main conceptual functions in implementation. (1) A versatile interface that can accommodate both real-time abstract monitoring and post-experiment in-depth analysis. (2) A cost-effective visualization that can augment the researcher's perception with limited data considering the network constraint of the remote operation setting.
+
+![An example image of how interface modularization perform](/image/robot-teleoperation/grid.gif)
 
 In response to (1), Uviz adopts interface modularization. Uviz modules (windows) are easily added and removed by the researcher's monitoring needs with its componentized ROS(Robot Operating System) subscription service in the Python backend. For (2), Uviz reflects the effective visualization metaphor. These metaphors aim to augment the situational perception of the researcher with a minimal set of information.
 
@@ -43,9 +45,10 @@ In response to various research needs, Uviz implemented multiple visualization m
 
 ### Pointcloud Calibration
 
-Additionally, Uviz supports a lidar-based position calibration. It overlaps two point clouds to let the researcher measure the deviation of robot's positional estimation from the ground truth. One represents the live lidar-scanned point cloud while the other reveals the indexed point cloud based on the currently estimated robot position.
+Additionally, Uviz supports a lidar-based position calibration. It overlaps two point clouds to let the researcher measure the deviation of the robot's positional estimation from the ground truth. One represents the live lidar-scanned point cloud while the other reveals the indexed point cloud based on the currently estimated robot position.
 
-![A point cloud sensor calibration](/image/robot-teleoperation/3.jpeg)
+<!-- ![A point cloud sensor calibration](/image/robot-teleoperation/3.jpeg) -->
+![A point cloud sensor calibration](/image/robot-teleoperation/adjust.gif)
 
 By comparing two point clouds, the researcher can accurately estimate the size of the estimation error. To assist in accurate decision-making, Uviz illustrates the error size by a color gradient to help the researcher. In interface, the pink indicates an increase in deviation and cyan indicates the increasing proximity between the two. 
 

@@ -43,7 +43,7 @@ Within the project, we conducted a usability test with 5 participants using a vi
 
 ![Usability testing result for 5 participants. While most participants perceived the task as challenging, they also acknowledged that the interface was helping in conducting the task](/image/auditory-map/6.png)
 
-The main technical challenge within the project was the implementation of a real-time processing of the user screen. Due to the Chrome security policy, generating a real-time stream of the webpage is inhibited by the design. Therefore, our team created an interval page capture to circumvent the guidelines.
+The main technical challenge within the project was implementing real-time image processing of the user screen. Due to the Chrome security policy, capturing a video stream of the webpage in real time is inhibited by the design. Therefore, our team created an interval page capture to circumvent the guidelines.
 
 <br>
 

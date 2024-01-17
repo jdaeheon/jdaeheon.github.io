@@ -25,6 +25,6 @@ Parametric Wave is a project conducted as a part of a computer graphics class at
     </div>
 </div>
 
-Each geometry has variable heights changing over time, creating an illusion of force accumulation. The mathematical logic behind the wave was implemented with the help of the documentation by the [Nvidia](https://developer.nvidia.com/gpugems/gpugems/part-i-natural-effects/chapter-1-effective-water-simulation-physical-models). The equation consisted of simple trigonometric functions, yet, it was capable of simulating a persuasive visual. A beauty of mathematics! With an additional touch on the materials and the lighting, Parametric Wave visaulizes accumulating entropy of the force, rotating at an angle, with a beautiful gradient on its surface.
+Each geometry has variable heights changing over time, creating an illusion of force accumulation. The mathematical logic behind the wave was implemented with the help of the documentation by the [Nvidia](https://developer.nvidia.com/gpugems/gpugems/part-i-natural-effects/chapter-1-effective-water-simulation-physical-models). The equation consisted of simple trigonometric functions, yet, it was capable of simulating a persuasive visual. A beauty of mathematics! With an additional touch on the materials and the lighting, Parametric Wave visualizes accumulating entropy of the force, rotating at an angle, with a beautiful gradient on its surface.
 
 
