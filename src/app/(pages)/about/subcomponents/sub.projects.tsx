@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./subcomponent.module.css";
-import { ArrowIndicator } from "./sub.arrowIndicator";
 import Story from "@/app/components/story";
 import Link from "next/link";
 import { getMarkdownArray } from "@/app/utils/common";
@@ -12,9 +11,6 @@ async function Projects() {
     <>
       <Link className={styles["project-title"]} href={"/projects"}>
         <h3>projects</h3>
-        <div className={styles["sub-title-more"]}>
-          <ArrowIndicator />
-        </div>
       </Link>
       <section className={styles["project-content"]}>
         {projectsMarkdownList.map((item, i) => {

@@ -12,7 +12,7 @@ async function About() {
     <div className={styles.container}>
       <section className={styles["cover-letter"]}>
         <article className={styles["cover-letter-description"]}>
-          <h3>design · research · implement</h3>
+          <h3>introduction</h3>
           <MarkdownWrapper>{coverLetter.content}</MarkdownWrapper>
         </article>
         <article className={styles["cover-letter-link"]}>

@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./subcomponent.module.css";
-import { ArrowIndicator } from "./sub.arrowIndicator";
+// import { ArrowIndicator } from "./sub.arrowIndicator";
 import MarkdownWrapper from "@/app/components/markdownWrapper";
 import { getMarkdownArray } from "@/app/utils/common";
 import Link from "next/link";
@@ -12,9 +12,6 @@ async function News() {
     <>
       <Link className={styles["news-title"]} href={"/news"}>
         <h3>news</h3>
-        <div className={styles["sub-title-more"]}>
-          <ArrowIndicator />
-        </div>
       </Link>
       <section className={styles["news-content"]}>
         {newsMarkdownList.map((item, i) => (

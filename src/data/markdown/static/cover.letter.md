@@ -6,13 +6,13 @@ featured: "true"
 thumbnail: ""
 ---
 
-I'm an undergraduate researcher pursuing a bachelor's in economics and software.
-My consistent interest lies in improving our cognitive ability through artificial intelligence.
-And I've organized multiple projects regarding the topic.
+I'm an incoming master's student in KAIST Interaction Lab.
+My interest lies in helping human learning through visual scaffolding with artificial intelligence.
+I'm currently advised by [Prof. Juho Kim](https://juhokim.com/) and [Dr. Daehyun Kim](https://dhkim16.github.io/).
 
-These projects navigate the topic of artificial intelligence, learning science, accessibility, and visualization.
+Previously, I've actively organized several projects regarding the topic.
+These projects navigate the topic of artificial intelligence, learning science, visualization, and accessibility.
 With projects, I was advised by [Prof. Yongsoon Choi](http://lifestylemedia.org/) and [Dr. Giseop Kim](https://gisbi-kim.github.io/).
-Now, I'm seeking further rigorous research training opportunities.
 
 
 <!-- These projects are 
