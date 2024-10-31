@@ -21,7 +21,11 @@ function PageLayout({ children }: { children: React.ReactNode }) {
           alt="hidden thumbnail"
         />
         <nav className={styles.header}>
-          <h1 className={styles["header-title"]}>Daeheon Jeong</h1>
+          <h1 className={styles["header-title"]}>
+            Daeheon
+            <br />
+            Jeong
+          </h1>
           <Link
             className={`${styles["header-button"]} ${isActive("", pathName)}`}
             href="/"

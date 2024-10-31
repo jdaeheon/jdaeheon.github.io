@@ -46,13 +46,6 @@ function Story(props: IStoryProps) {
         <p className={styles["story-content"]}>{props.content}</p>
         <div className={styles["story-endnote"]}>
           <p className={styles["story-date"]}>{props.date}</p>
-          <p
-            className={`${styles["story-link"]} ${
-              isHover ? styles["visible"] : styles["hidden"]
-            }`}
-          >
-            more
-          </p>
         </div>
       </div>
     </Link>
