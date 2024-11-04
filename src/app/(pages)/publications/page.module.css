@@ -80,11 +80,11 @@
   justify-content: space-between;
 
   font-family: var("--franklin-font");  
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
 
 .publications-details-date{
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
 
 .publications-details-links{

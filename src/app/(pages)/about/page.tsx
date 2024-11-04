@@ -12,11 +12,11 @@ async function About() {
     <div className={styles.container}>
       <section className={styles["cover-letter"]}>
         <article className={styles["cover-letter-description"]}>
-          <h3>introduction</h3>
+          <h3>Introduction</h3>
           <MarkdownWrapper>{coverLetter.content}</MarkdownWrapper>
         </article>
         <article className={styles["cover-letter-link"]}>
-          <h3>links</h3>
+          <h3>Links</h3>
           <Link className={styles["cover-letter-link-item"]} href="/cv.pdf">
             <u>Curriculum Vitae</u>
           </Link>

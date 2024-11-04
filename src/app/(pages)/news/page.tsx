@@ -7,7 +7,7 @@ async function News() {
   const newsMarkdownList = await getMarkdownArray("news");
   return (
     <section className={styles["container"]}>
-      <h3>news</h3>
+      <h3>News</h3>
       {newsMarkdownList.map((item, i) => {
         return (
           <article key={i} className={styles["news-article"]}>

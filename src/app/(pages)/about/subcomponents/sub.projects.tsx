@@ -10,7 +10,7 @@ async function Projects() {
   return (
     <>
       <Link className={styles["project-title"]} href={"/projects"}>
-        <h3>projects</h3>
+        <h3>Projects</h3>
       </Link>
       <section className={styles["project-content"]}>
         {projectsMarkdownList.map((item, i) => {

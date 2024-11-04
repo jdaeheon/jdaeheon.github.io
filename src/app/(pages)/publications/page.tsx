@@ -8,7 +8,7 @@ async function Publications() {
   return (
     <section className={styles["container"]}>
       <div className={styles["container-header"]}>
-        <h3>publications</h3>
+        <h3>Publications</h3>
       </div>
       {publicationList.map((item, i) => {
         return (
@@ -31,7 +31,7 @@ async function Publications() {
                     className={styles["publications-details-author-item"]}
                     style={
                       author === "Daeheon Jeong"
-                        ? { fontStyle: "italic", textDecoration: "underline" }
+                        ? { textDecoration: "underline" }
                         : {}
                     }
                   >

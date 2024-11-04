@@ -30,7 +30,7 @@ function PageLayout({ children }: { children: React.ReactNode }) {
             className={`${styles["header-button"]} ${isActive("", pathName)}`}
             href="/"
           >
-            about
+            About
           </Link>
           <Link
             className={`${styles["header-button"]} ${isActive(
@@ -39,7 +39,7 @@ function PageLayout({ children }: { children: React.ReactNode }) {
             )}`}
             href="/news"
           >
-            news
+            News
           </Link>
           <Link
             className={`${styles["header-button"]} ${isActive(
@@ -48,7 +48,7 @@ function PageLayout({ children }: { children: React.ReactNode }) {
             )}`}
             href="/projects"
           >
-            projects
+            Projects
           </Link>
           <Link
             className={`${styles["header-button"]} ${isActive(
@@ -57,7 +57,7 @@ function PageLayout({ children }: { children: React.ReactNode }) {
             )}`}
             href="/publications"
           >
-            publications
+            Publications
           </Link>
         </nav>
         <div className={styles.body}>{children}</div>

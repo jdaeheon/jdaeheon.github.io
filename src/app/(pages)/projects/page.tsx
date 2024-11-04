@@ -18,7 +18,7 @@ async function Projects() {
   return (
     <section className={styles["container"]}>
       <div className={styles["container-header"]}>
-        <h3>projects</h3>
+        <h3>Projects</h3>
         <div className={styles["sub-menu"]}>
           {projectCategories.map((item, i) => (
             <Button item={item} key={i} />

@@ -1,5 +1,5 @@
 .markdown-a{
-  font-style: italic;
+  /* font-style: italic; */
   /* text-decoration: underline; */
   font-family: var(--bitter-font);
   text-decoration: underline;
@@ -9,6 +9,8 @@
   font-size: 0.8rem;
   line-height: 1.6rem;
   margin: 0.8rem 0;
+
+  font-family: var(--open-sans-font);
 }
 
 .markdown-h1{
@@ -70,7 +72,7 @@
   font-size: 0.7rem;
   margin: 0.8rem 0;
   line-height: 1.2rem;
-  font-family: var(--bitter-font);
+  font-family: var(--open-sans-font);
   font-style: italic;
   text-align: center;
 }

@@ -11,7 +11,7 @@ async function News() {
   return (
     <>
       <Link className={styles["news-title"]} href={"/news"}>
-        <h3>news</h3>
+        <h3>News</h3>
       </Link>
       <section className={styles["news-content"]}>
         {newsMarkdownList.map((item, i) => (
