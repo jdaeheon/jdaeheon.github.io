@@ -1,3 +1,5 @@
+"use client";
+
 import React, { ReactNode } from "react";
 import Markdown, { ExtraProps } from "react-markdown";
 import remarkGfm from "remark-gfm";

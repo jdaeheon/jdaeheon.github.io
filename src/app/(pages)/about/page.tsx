@@ -1,10 +1,11 @@
 import React from "react";
 import styles from "./page.module.css";
 import News from "./subcomponents/sub.news";
-import Projects from "./subcomponents/sub.projects";
+import Publications from "../publications/page";
 import MarkdownWrapper from "@/app/components/markdownWrapper";
 import { getMarkDownItem } from "@/app/utils/common";
 import Link from "next/link";
+import SubPublications from "./subcomponents/sub.publications";
 
 async function About() {
   const coverLetter = await getMarkDownItem("static/cover.letter.md");
@@ -41,11 +42,8 @@ async function About() {
           />
         </article>
       </section>
-      <article className={styles["news"]}>
-        <News />
-      </article>
-      <article className={styles["projects"]}>
-        <Projects />
+      <article className={styles["publications"]}>
+        <SubPublications />
       </article>
     </div>
   );

@@ -1,0 +1,115 @@
+.publications-article{
+  width: 100%;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1.6rem;
+}
+
+.publications-thumbnail{
+  width: 20%;
+}
+
+.publications-thumbnail-img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.publications-detail{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.publications-detail-title{
+  font-family: var("--franklin-font");  
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.publications-details-authors{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  row-gap: 0.2rem; /* Reduced gap between lines */
+}
+
+.publications-details-author-item{
+  font-family: var(--bitter-font);
+  font-size: 0.8rem;
+}
+
+.publications-details-other{
+  display: flex;
+  gap: 0.8rem;
+  font-family: var("--franklin-font");  
+  font-size: 0.8rem;
+}
+
+.publications-details-date{
+  font-size: 0.8rem;
+}
+
+.publications-details-venue{
+  font-size: 0.8rem;
+}
+
+.publications-details-links{
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Changed to space-between */
+  gap: 0.2rem;
+  width: 100%;
+}
+
+.publications-details-links-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.2rem;
+}
+
+.publications-details-link-item{
+  border: 1px solid;
+  font-size: 0.7rem;
+  padding: 0.2rem 1rem;
+  transition: 0.3s;
+}
+
+.publications-details-link-item:hover{
+  box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 700px) {  
+  .publications-thumbnail{
+    width: 20%;
+  }
+  .publications-detail{
+    width: 80%;
+    gap: 0.8rem; /* Increased from 0.4rem for better line spacing */
+  }
+  .publications-details-authors{
+    gap: 0.4rem; /* Increased from 0.2rem */
+    row-gap: 0.4rem; /* Increased line gap */
+  }
+  .publications-details-other{
+    flex-direction: column;
+    gap: 0.4rem; /* Increased from 0.2rem */
+  }
+  .publications-details-links{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem; /* Increased from 0.4rem */
+  }
+  .publications-details-links-container {
+    justify-content: flex-start;
+    gap: 0.4rem; /* Increased from 0.2rem */
+    margin-top: 0.2rem; /* Added small margin top */
+  }
+  .publications-details-author-item {
+    line-height: 1.0;
+  }
+}
