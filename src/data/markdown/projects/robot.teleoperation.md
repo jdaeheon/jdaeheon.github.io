@@ -58,8 +58,8 @@ Addtionally, to increase the precision, Uviz implements an orthgraphic camera th
 
 <br>
 
-### Deployment
+<!-- ### Deployment
 
 Uviz was officially integrated as the robot's positional uncertainty monitoring module for the project described in the video.
 
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/VUA8uCPbid4?si=LuZ3STM_L2tZCIoD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/VUA8uCPbid4?si=LuZ3STM_L2tZCIoD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
