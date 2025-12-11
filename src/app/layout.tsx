@@ -24,7 +24,8 @@ const fontClassNames = `${openSans.className} ${bitter.variable} ${franklin.vari
 
 export const metadata: Metadata = {
   title: "Daeheon Jeong",
-  description: "Graduate student interested in HAI, UX, and Accessibility",
+  description:
+    "Graduate student interested in HAI, Knowledge Work, and AI Alignment",
   robots: {
     index: false,
     follow: false,
