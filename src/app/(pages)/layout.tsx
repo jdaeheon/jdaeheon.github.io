@@ -21,44 +21,46 @@ function PageLayout({ children }: { children: React.ReactNode }) {
           alt="hidden thumbnail"
         />
         <nav className={styles.header}>
-          <h1 className={styles["header-title"]}>
-            Daeheon
-            <br />
-            Jeong
-          </h1>
-          <Link
-            className={`${styles["header-button"]} ${isActive("", pathName)}`}
-            href="/"
-          >
-            About
-          </Link>
-          <Link
-            className={`${styles["header-button"]} ${isActive(
-              "news",
-              pathName
-            )}`}
-            href="/news"
-          >
-            News
-          </Link>
-          <Link
-            className={`${styles["header-button"]} ${isActive(
-              "projects",
-              pathName
-            )}`}
-            href="/projects"
-          >
-            Projects
-          </Link>
-          <Link
-            className={`${styles["header-button"]} ${isActive(
-              "publications",
-              pathName
-            )}`}
-            href="/publications"
-          >
-            Publications
-          </Link>
+          <div className={styles["header-container"]}>
+            <h1 className={styles["header-title"]}>
+              Daeheon
+              <br />
+              Jeong
+            </h1>
+            <Link
+              className={`${styles["header-button"]} ${isActive("", pathName)}`}
+              href="/"
+            >
+              About
+            </Link>
+            <Link
+              className={`${styles["header-button"]} ${isActive(
+                "news",
+                pathName
+              )}`}
+              href="/news"
+            >
+              News
+            </Link>
+            <Link
+              className={`${styles["header-button"]} ${isActive(
+                "projects",
+                pathName
+              )}`}
+              href="/projects"
+            >
+              Projects
+            </Link>
+            <Link
+              className={`${styles["header-button"]} ${isActive(
+                "publications",
+                pathName
+              )}`}
+              href="/publications"
+            >
+              Publications
+            </Link>
+          </div>
         </nav>
         <div className={styles.body}>{children}</div>
         <footer className={styles.footer}></footer>

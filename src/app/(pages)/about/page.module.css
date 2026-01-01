@@ -8,7 +8,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  gap: 1.6rem;
+  gap: 1.2rem;
   padding: 1.6rem;
 }
 
@@ -35,9 +35,7 @@
   height: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1.6rem;
-  /* padding: 1.6rem; */
-  /* padding: 0 1.6rem; */
+  gap: 1.2rem;
   font-size: 1rem;
 } 
 .cover-letter-description{
@@ -95,41 +93,43 @@
   width: 100%;
 }
 
-@media only screen and (max-width: 700px) {  
+@media only screen and (max-width: 700px) {
   .cover-letter{
     width: 100%;
     height: 100%;
     display: flex;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
 
-    gap: 1.6rem;
-    /* padding: 0 1.6rem; */
-    /* padding: 1.6rem; */
+    gap: 1.2rem;
     font-size: 1rem;
-  } 
+  }
+  .cover-letter-description{
+    width: 100%;
+    order: 1;
+  }
   .cover-letter-link{
     font-size: 0.8rem;
-    width: 100%;
+    flex: 1 1 45%;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
     gap: 1rem;
+    order: 2;
   }
   .cover-letter h3{
     font-size: 0.8rem;
   }
   .cover-letter-aside{
-    width: 100%;
+    flex: 1 1 45%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    order: 3;
   }
   .cover-letter-photo{
-    width: 30%;
-    min-width: 100px;
-    max-width: 200px;
+    width: 100%;
+    max-width: 150px;
   }
   .cover-letter-link-item{
     font-size: 0.7rem;
@@ -143,9 +143,7 @@
   display: flex;
   flex-direction: column;
 
-  /* padding: 1.6rem; */
-  /* padding: 0 1.6rem; */
-  gap: 1.6rem;
+  gap: 1.2rem;
 }
 
 /* projects items */
@@ -157,7 +155,7 @@
 
   /* padding: 0 1.6rem; */
   /* padding: 1.6rem; */
-  gap: 1.6rem;
+  gap: 1.2rem;
 }
 
 .publications{
@@ -167,5 +165,5 @@
 
   /* padding: 0 1.6rem; */
   /* padding: 1.6rem; */
-  gap: 1.6rem;
+  gap: 1.2rem;
 }

@@ -19,7 +19,7 @@
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1.6rem;
+  gap: 1.2rem;
 }
 .news-item{
   display: flex;
@@ -88,7 +88,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  gap: 1.6rem;
+  gap: 1.2rem;
 }
 
 /* publication items */
@@ -102,7 +102,7 @@
   justify-content: flex-start;
   align-items: center;
 
-  gap: 1.6rem;
+  gap: 1.2rem;
 }
 
 .publication-container h3{
