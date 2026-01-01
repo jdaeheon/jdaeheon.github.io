@@ -36,7 +36,7 @@ async function About() {
         </article>
         <article className={styles["cover-letter-aside"]}>
           <img
-            src={"/profile.png"}
+            src={"/profile.jpg"}
             className={styles["cover-letter-photo"]}
             alt="profile image of Daeheon Jeong"
           />
