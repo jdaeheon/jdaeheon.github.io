@@ -1,6 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Open_Sans, Bitter, Libre_Franklin } from "next/font/google";
+import { Open_Sans, Lora, Libre_Franklin } from "next/font/google";
 import Head from "next/head";
 import Script from "next/script";
 
@@ -8,9 +8,10 @@ const openSans = Open_Sans({
   subsets: ["latin"],
   variable: "--open-sans-font",
 });
-const bitter = Bitter({
+const lora = Lora({
   subsets: ["latin"],
-  variable: "--bitter-font",
+  weight: ["400", "500", "600", "700"],
+  variable: "--lora-font",
 });
 const franklin = Libre_Franklin({
   subsets: ["latin"],
@@ -20,7 +21,7 @@ const franklin = Libre_Franklin({
 // [SOURCE] Font Variables
 // https://nextjs.org/docs/app/api-reference/components/font#css-variables
 // const fontClassNames = `${open-sans.className} ${merriweather.variable} ${inter.variable} ${poppins.variable}`;
-const fontClassNames = `${openSans.className} ${bitter.variable} ${franklin.variable}`;
+const fontClassNames = `${openSans.className} ${lora.variable} ${franklin.variable}`;
 
 export const metadata: Metadata = {
   title: "Daeheon Jeong",
