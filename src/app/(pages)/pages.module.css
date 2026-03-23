@@ -109,7 +109,7 @@
   font-family: var(--lora-font);
   font-weight: 500;
   padding: 0.5rem 1rem;
-  text-shadow: 0 1px 30px rgb(169, 210, 255, 0.8);
+  text-shadow: 0 1px 30px rgb(169, 210, 255, 0.7);
 }
 
 .header-button {
@@ -118,7 +118,7 @@
   color: black;
   font-family: var(--franklin-font);
   font-size: 0.8rem;
-  text-shadow: 0 1px 30px rgb(169, 210, 255, 0.8);
+  text-shadow: 0 1px 30px rgb(169, 210, 255, 0.7);
 }
 
 .header-button:hover {
@@ -181,8 +181,8 @@
     background: linear-gradient(
       180deg,
       #ffffff 0%,
-      #eaf4ff 30%,
-      #eaf4ff 70%,
+      #eaf4ff 35%,
+      #eaf4ff 65%,
       #ffffff 100%
     );
   }
