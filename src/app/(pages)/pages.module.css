@@ -42,12 +42,38 @@
   content: "";
   position: absolute;
   inset: 0;
+  z-index: 0;
   background: linear-gradient(
     180deg,
     #ffffff 0%,
-    #f2f8ff 50%,
+    #eaf4ff 50%,
     #ffffff 100%
   );
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    #000000 3%,
+    #000000 97%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    #000000 3%,
+    #000000 97%,
+    transparent 100%
+  );
+  pointer-events: none;
+}
+
+.header-container::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.16) 0.55px, transparent 0.65px);
+  background-size: 3px 3px;
+  opacity: 0.1;
   -webkit-mask-image: linear-gradient(
     90deg,
     transparent 0%,
@@ -148,6 +174,16 @@
     height: 100%;
     gap: 0.5rem;
     padding: 1.2rem;
+  }
+
+  .header-container::before {
+    background: linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #eaf4ff 30%,
+      #eaf4ff 70%,
+      #ffffff 100%
+    );
   }
 
   .header-title{

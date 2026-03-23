@@ -24,7 +24,7 @@
 }
 
 .publications-detail-title{
-  font-family: var("--franklin-font");  
+  font-family: var(--franklin-font);  
   font-weight: 600;
   font-size: 0.8rem;
 }
@@ -44,7 +44,7 @@
 .publications-details-other{
   display: flex;
   gap: 0.8rem;
-  font-family: var("--franklin-font");  
+  font-family: var(--franklin-font);  
   font-size: 0.8rem;
 }
 

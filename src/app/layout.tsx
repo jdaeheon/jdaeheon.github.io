@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Open_Sans, Lora, Libre_Franklin } from "next/font/google";
+
 import Head from "next/head";
 import Script from "next/script";
 
@@ -17,7 +18,6 @@ const franklin = Libre_Franklin({
   subsets: ["latin"],
   variable: "--franklin-font",
 });
-
 // [SOURCE] Font Variables
 // https://nextjs.org/docs/app/api-reference/components/font#css-variables
 // const fontClassNames = `${open-sans.className} ${merriweather.variable} ${inter.variable} ${poppins.variable}`;
