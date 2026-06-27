@@ -6,6 +6,7 @@ contributors: ["Daeheon Jeong*" , "Seoyeon Byun*", "Kihoon Son", "Dae Hyun Kim",
 links:
   Webpage: "https://canvas.kixlab.org/"
   arXiv: "https://arxiv.org/abs/2511.20737"
+  DOI: "https://doi.org/10.1609/aaai.v40i26.39374"
 thumbnail: "image/publication/canvas.png"
 caption: "A thumbnail of the publication"
 type: 0
