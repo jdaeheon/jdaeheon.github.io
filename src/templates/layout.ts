@@ -36,7 +36,7 @@ export function layout({
         <nav class="header" aria-label="Primary navigation">
           <div class="header-container">
             <h1 class="header-title">Daeheon<br>Jeong</h1>
-            <a class="header-button${route === "about" ? " header-button-active" : ""}" href="/">About</a>
+            <a class="header-button${route === "about" ? " header-button-active" : ""}" href="/about/">About</a>
             <a class="header-button${route === "news" ? " header-button-active" : ""}" href="/news/">News</a>
             <a class="header-button${route === "projects" ? " header-button-active" : ""}" href="/projects/">Projects</a>
             <a class="header-button${route === "publications" ? " header-button-active" : ""}" href="/publications/">Publications</a>
@@ -52,7 +52,7 @@ export function layout({
 }
 
 const navigationRoutes: Array<{ href: string; route: RouteName }> = [
-  { href: "/", route: "about" },
+  { href: "/about/", route: "about" },
   { href: "/news/", route: "news" },
   { href: "/projects/", route: "projects" },
   { href: "/publications/", route: "publications" },
