@@ -15,24 +15,32 @@ async function About() {
         <article className={styles["cover-letter-description"]}>
           <h3>Introduction</h3>
           <MarkdownWrapper>{coverLetter.content}</MarkdownWrapper>
-        </article>
-        <article className={styles["cover-letter-link"]}>
-          <h3>Links</h3>
-          <Link className={styles["cover-letter-link-item"]} href="/cv.pdf">
-            <u>Curriculum Vitae</u>
-          </Link>
-          <a
-            className={styles["cover-letter-link-item"]}
-            href="https://github.com/jdaeheon"
-          >
-            <u>Github</u>
-          </a>
-          <a
-            className={styles["cover-letter-link-item"]}
-            href="mailto:neohgeek@gmail.com"
-          >
-            <u>Email</u>
-          </a>
+          <nav className={styles["cover-letter-link"]} aria-label="Profile links">
+            <Link
+              className={`${styles["cover-letter-link-item"]} text-button`}
+              href="/cv.pdf"
+            >
+              CV
+            </Link>
+            <a
+              className={`${styles["cover-letter-link-item"]} text-button`}
+              href="https://github.com/jdaeheon"
+            >
+              Github
+            </a>
+            <a
+              className={`${styles["cover-letter-link-item"]} text-button`}
+              href="https://www.linkedin.com/in/daeheon-jeong"
+            >
+              LinkedIn
+            </a>
+            <a
+              className={`${styles["cover-letter-link-item"]} text-button`}
+              href="mailto:neohgeek@gmail.com"
+            >
+              Email
+            </a>
+          </nav>
         </article>
         <article className={styles["cover-letter-aside"]}>
           <img

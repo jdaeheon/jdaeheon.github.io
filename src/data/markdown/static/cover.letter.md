@@ -6,10 +6,12 @@ featured: "true"
 thumbnail: ""
 ---
 
-I'm a master's student in KAIST GSAI, conducting research at KAIST Interaction Lab ([KIXLab](https://www.kixlab.org/)).
-My research focuses on augmenting human knowledge work through artificial intelligence.
+Hi there! I'm Daeheon, a master's student at KAIST Graduate School of AI.
+
+My research focuses on designing the **user experience** of language models through the lens of **model interpretability**.
+I'm especially intrigued by how models understand you, me, and the people who use them!
+Feel free to reach out if you share similar interests.
 I'm currently advised by [Prof. Juho Kim](https://juhokim.com/).
 
-Previously, I have led and contributed to several research projects in this area.
-These projects involved developing AI systems to support human expertise and cognition.
-I have been advised by [Prof. Daehyun Kim](https://dhkim16.github.io/), [Prof. Yongsoon Choi](http://lifestylemedia.org/), and [Prof. Giseop Kim](https://sites.google.com/view/aprl-dgist/people).
+Previously, I've explored and collaborated across user experience, design, and expert collaboration.
+My previous mentors include [Prof. Daehyun Kim](https://dhkim16.github.io/), [Prof. Yongsoon Choi](http://lifestylemedia.org/), and [Prof. Giseop Kim](https://team-aprl.github.io/team.html).

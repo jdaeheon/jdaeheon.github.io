@@ -44,7 +44,7 @@ function button(props: IButtonProps) {
 
   return (
     <button
-      className={styles["sub-menu-button"]}
+      className={`${styles["sub-menu-button"]} text-button`}
       onClick={() => handleSubMenuButton(props.item)}
     >
       {props.item}

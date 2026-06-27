@@ -53,7 +53,7 @@ const PublicationItem: React.FC<PublicationItemProps> = ({ data }) => {
             {Object.entries(data.links).map(([key, value], i) => (
               <a
                 key={i}
-                className={styles["publications-details-link-item"]}
+                className={`${styles["publications-details-link-item"]} text-button`}
                 href={value}
                 target="_blank"
                 rel="noopener noreferrer"

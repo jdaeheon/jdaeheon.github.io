@@ -38,6 +38,9 @@
   --callout-border-rgb: 172, 175, 176;
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
+
+  --body-text-size: 0.8rem;
+  --button-text-size: var(--body-text-size);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -98,6 +101,36 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+button {
+  font: inherit;
+}
+
+.text-button {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  color: inherit;
+  cursor: pointer;
+  font-family: var(--franklin-font);
+  font-size: var(--button-text-size);
+  line-height: 1.2rem;
+  padding: 0;
+  text-align: left;
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+  transition: opacity 0.2s ease, text-shadow 0.2s ease;
+}
+
+.text-button:hover {
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
+}
+
+.text-button:focus-visible {
+  outline: 1px solid currentColor;
+  outline-offset: 3px;
 }
 
 @media (prefers-color-scheme: dark) {
