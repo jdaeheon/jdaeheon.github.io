@@ -427,6 +427,7 @@ button {
   font-size: var(--button-text-size);
   gap: 0.3rem;
   grid-column: span 1;
+  justify-content: flex-end;
   width: 100%;
 }
 
@@ -476,7 +477,7 @@ button {
 
 .story-item {
   display: flex;
-  flex: 2 1 0;
+  flex: 1 1 0;
   flex-direction: column;
   gap: 0.6rem;
 }

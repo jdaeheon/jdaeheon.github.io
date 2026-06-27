@@ -23,7 +23,7 @@ export function renderAbout(
               <span class="cover-letter-link-label">Links:</span>
               <a class="text-button cover-letter-link-item" href="/cv.pdf">CV</a>
               <a class="text-button cover-letter-link-item" href="https://github.com/jdaeheon">Github</a>
-              <a class="text-button cover-letter-link-item" href="https://www.linkedin.com/in/daeheon-jeong">LinkedIn</a>
+              <a class="text-button cover-letter-link-item" href="https://scholar.google.com/citations?user=NsolHYsAAAAJ">Google Scholar</a>
               <a class="text-button cover-letter-link-item" href="mailto:neohgeek@gmail.com">Email</a>
             </nav>
           </article>
