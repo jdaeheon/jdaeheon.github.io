@@ -16,7 +16,7 @@ export function layout({
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Graduate student interested in HAI, Knowledge Work, and AI Alignment">
+    <meta name="description" content="Daeheon Jeong, Applied Scientist at SkillBench and Visiting Researcher at KAIST">
     <meta name="robots" content="noindex, nofollow, nocache">
     <meta name="googlebot" content="noindex, nofollow, noimageindex, max-video-preview:-1, max-image-preview:none, max-snippet:-1">
     <title>Daeheon Jeong</title>

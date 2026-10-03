@@ -6,7 +6,7 @@ featured: "true"
 thumbnail: ""
 ---
 
-Hi there! I'm Daeheon, a master's student at KAIST Graduate School of AI.
+Hi there! I'm Daeheon, an Applied Scientist at SkillBench and a Visiting Researcher at KAIST.
 
 My research focuses on designing the **user experience** of language models through the lens of **model interpretability**.
 I'm especially intrigued by how models understand you, me, and the people who use them!
